@@ -1,0 +1,1025 @@
+{
+  "id": "ba700a1a-fdf4-4f27-a812-9f56b59f3cea",
+  "version": "2.0",
+  "name": "PSI-Blackout",
+  "url": "http://localhost:8080/index.php/Store",
+  "tests": [{
+    "id": "4b086050-0b32-44ba-9d0d-1e8014b9017d",
+    "name": "Test-neuspjesno dodavanje- cijena nije napisana",
+    "commands": [{
+      "id": "9a1bd7bd-7334-445d-90bf-96863b1e6e4a",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/index.php/Store",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6da98649-a976-44f0-b468-f02cc5a14d10",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "977x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ab811994-841e-4c9b-9a27-f34a0cff3ef1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown-toggle",
+      "targets": [
+        ["css=.dropdown-toggle", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Angostura bitters')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a55bb3fb-6fcb-4764-b114-191ce05d9cb5",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bs-select-1-8 > .text",
+      "targets": [
+        ["css=#bs-select-1-8 > .text", "css:finder"],
+        ["xpath=//a[@id='bs-select-1-8']/span", "xpath:idRelative"],
+        ["xpath=//li[9]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Lime juice')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fac7d02a-d1fa-4917-8ce4-6c3acc64a1ab",
+      "comment": "",
+      "command": "select",
+      "target": "id=select-country",
+      "targets": [],
+      "value": "label=Lime juice"
+    }, {
+      "id": "15b9f5fc-fb00-4613-a255-7650fe0b9906",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Specify the price first!",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "cda154d3-fb87-4566-b129-6f12eb59d7fd",
+    "name": "Test- uspjesno dodavanje sastojka",
+    "commands": [{
+      "id": "6f73611f-ccf5-48aa-b039-d0ad3404eba4",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/index.php/Store",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "79959410-bd00-4ae1-af7f-5a63aac05ca4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "981x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7a9e272e-b10b-4806-aeab-92034e626458",
+      "comment": "",
+      "command": "click",
+      "target": "id=price",
+      "targets": [
+        ["id=price", "id"],
+        ["css=#price", "css:finder"],
+        ["xpath=//input[@id='price']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a11187f4-aeb7-4912-b5c6-06e65801df5b",
+      "comment": "",
+      "command": "type",
+      "target": "id=price",
+      "targets": [
+        ["id=price", "id"],
+        ["css=#price", "css:finder"],
+        ["xpath=//input[@id='price']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "10"
+    }, {
+      "id": "46c2e127-d28d-436e-9a33-7132228da211",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown-toggle",
+      "targets": [
+        ["css=.dropdown-toggle", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Angostura bitters')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff12255f-6427-4fe1-8115-b66c030aaf55",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bs-select-1-3 > .text",
+      "targets": [
+        ["css=#bs-select-1-3 > .text", "css:finder"],
+        ["xpath=//a[@id='bs-select-1-3']/span", "xpath:idRelative"],
+        ["xpath=//li[4]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Cranberry juice')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a9ac275-db5c-4430-8b02-27df6cd12df0",
+      "comment": "",
+      "command": "select",
+      "target": "id=select-country",
+      "targets": [],
+      "value": "label=Cranberry juice"
+    }, {
+      "id": "35268893-7b4e-45bc-b4cd-18783ba69bbe",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.fa-times",
+      "targets": [
+        ["css=.fa-times", "css:finder"],
+        ["xpath=//div[@name='delete_btn']", "xpath:attributes"],
+        ["xpath=//div[@id='18']/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "71ad4ab3-be72-474d-a4e9-92303248184c",
+    "name": "Test - promjena cijene sastojka",
+    "commands": [{
+      "id": "1de7d1f1-4bad-4c10-b13a-9f7228d9f2d8",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/index.php/Store",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "58978fb4-c409-49d4-b33f-92417a5d052c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "985x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6696cef6-e85f-4bda-ba2a-eb139f365a94",
+      "comment": "",
+      "command": "click",
+      "target": "id=change",
+      "targets": [
+        ["id=change", "id"],
+        ["css=#change", "css:finder"],
+        ["xpath=//button[@id='change']", "xpath:attributes"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Change price view')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b20415fc-3ab7-4ad2-a449-7100f14a0002",
+      "comment": "",
+      "command": "click",
+      "target": "css=.removeIng",
+      "targets": [
+        ["css=.removeIng", "css:finder"],
+        ["xpath=//div[@name='delete_btn']", "xpath:attributes"],
+        ["xpath=//div[@id='18']/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "78a91f13-974b-4e38-acf6-90ea8d7272a8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.inputPrice",
+      "targets": [
+        ["css=.inputPrice", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='changePrice']/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "930679ff-0337-4ace-beb8-bbf9bbc58b45",
+      "comment": "",
+      "command": "type",
+      "target": "css=.inputPrice",
+      "targets": [
+        ["css=.inputPrice", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='changePrice']/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": "15"
+    }, {
+      "id": "8b819be1-7fae-4b1c-85ae-3290c1a80ff6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.myNewPrice",
+      "targets": [
+        ["css=.myNewPrice", "css:finder"],
+        ["xpath=//div[@id='changePrice']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b7938c26-e3e4-4a0a-ad54-1d95fbf5d9a5",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.table_data",
+      "targets": [
+        ["css=.table_data", "css:finder"],
+        ["xpath=//div[@id='18']/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Cranberry juice 15.00€')]", "xpath:innerText"]
+      ],
+      "value": "Cranberry juice 15.00€"
+    }]
+  }, {
+    "id": "2ff678b7-a2b8-442b-8484-7378ca62bbdb",
+    "name": "Test - neuspjesno dodavanje sastojka - negativna cijena",
+    "commands": [{
+      "id": "7b0e5317-f6f4-4adf-93f6-1c6d400b9798",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/index.php/Store",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "def028e9-2503-4c04-8304-976060c061c5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "989x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a4f6ac0f-9e29-4dde-ae9b-f5365111a366",
+      "comment": "",
+      "command": "click",
+      "target": "id=price",
+      "targets": [
+        ["id=price", "id"],
+        ["css=#price", "css:finder"],
+        ["xpath=//input[@id='price']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2f1f470e-1b34-415b-bc13-cfeb7728ce2f",
+      "comment": "",
+      "command": "type",
+      "target": "id=price",
+      "targets": [
+        ["id=price", "id"],
+        ["css=#price", "css:finder"],
+        ["xpath=//input[@id='price']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "-10"
+    }, {
+      "id": "4c4cb6b1-cc8f-4bc7-8dd0-bfc8bb22d918",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown-toggle",
+      "targets": [
+        ["css=.dropdown-toggle", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Angostura bitters')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "09d18229-a974-462e-997f-3c879e39dbee",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.dropdown-toggle",
+      "targets": [
+        ["css=.dropdown-toggle", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Angostura bitters')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6feb049b-8bdc-4d0b-8c4c-3e8c004f36f2",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.dropdown-toggle",
+      "targets": [
+        ["css=.dropdown-toggle", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Angostura bitters')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe0053dc-3f7a-42ae-8949-b073c399179c",
+      "comment": "",
+      "command": "click",
+      "target": "id=bs-select-1-11",
+      "targets": [
+        ["id=bs-select-1-11", "id"],
+        ["linkText=Orange", "linkText"],
+        ["css=#bs-select-1-11", "css:finder"],
+        ["xpath=//a[@id='bs-select-1-11']", "xpath:attributes"],
+        ["xpath=//div[@id='bs-select-1']/ul/li[12]/a", "xpath:idRelative"],
+        ["xpath=//li[12]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Orange')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3317281e-4325-443c-ad71-cfd285cefa84",
+      "comment": "",
+      "command": "select",
+      "target": "id=select-country",
+      "targets": [],
+      "value": "label=Orange"
+    }, {
+      "id": "c7d1503e-4db7-467f-8eec-5c487d0748e9",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.col:nth-child(3)",
+      "targets": [
+        ["css=.col:nth-child(3)", "css:finder"],
+        ["xpath=(//div[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='fixToTop']/div[3]", "xpath:idRelative"],
+        ["xpath=//div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "39b684f7-721a-438a-83d9-5ba9aed257c8",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#\\34 > .table_data",
+      "targets": [
+        ["css=#\\34 > .table_data", "css:finder"],
+        ["xpath=//div[@id='4']/p", "xpath:idRelative"],
+        ["xpath=//div[4]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Orange -10.00€')]", "xpath:innerText"]
+      ],
+      "value": "Orange -10.00€"
+    }]
+  }, {
+    "id": "0f84d996-1b6b-4195-ba55-f7b323248603",
+    "name": "Test - neuspjesno dodavanje sastojka - cijena nije broj",
+    "commands": [{
+      "id": "ae088388-5025-42e0-aa80-56941dadb8a7",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/index.php/Store",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "51dbba34-52a5-421b-aa9f-652f44ca0e4c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "993x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "367776b3-1076-4d7c-a6be-9be251e581d8",
+      "comment": "",
+      "command": "click",
+      "target": "id=price",
+      "targets": [
+        ["id=price", "id"],
+        ["css=#price", "css:finder"],
+        ["xpath=//input[@id='price']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a94f097-66fc-4eaf-89aa-350f8fe5c472",
+      "comment": "",
+      "command": "type",
+      "target": "id=price",
+      "targets": [
+        ["id=price", "id"],
+        ["css=#price", "css:finder"],
+        ["xpath=//input[@id='price']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "abc"
+    }, {
+      "id": "c276f049-cc4a-4b5d-ae3a-2cecef7574cf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown-toggle",
+      "targets": [
+        ["css=.dropdown-toggle", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Angostura bitters')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a6aca9f4-1723-42fe-81ad-94798d7bc9a5",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bs-select-1-12 > .text",
+      "targets": [
+        ["css=#bs-select-1-12 > .text", "css:finder"],
+        ["xpath=//a[@id='bs-select-1-12']/span", "xpath:idRelative"],
+        ["xpath=//li[13]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Sloe gin')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2aad3d0-1f70-4f5a-bc55-7a9fbc874419",
+      "comment": "",
+      "command": "select",
+      "target": "id=select-country",
+      "targets": [],
+      "value": "label=Sloe gin"
+    }, {
+      "id": "0c8d3711-f709-43ec-bffc-342219df6d21",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-sm-8",
+      "targets": [
+        ["css=.col-sm-8", "css:finder"],
+        ["xpath=//nav/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ccf307e-12f4-4e8f-832d-2b9bb074f817",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=#\\31 > img",
+      "targets": [
+        ["css=#\\31 > img", "css:finder"],
+        ["xpath=//div[@id='1']/img", "xpath:idRelative"],
+        ["xpath=//div[5]/img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "3ce04223-15c0-4ba3-8e94-313cb368eb76",
+    "name": "Test - uspjesna promjena lozinke",
+    "commands": [{
+      "id": "99328fe9-449a-41a5-b9ae-dd5156c27ae9",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/index.php/Store",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4d933971-1f37-4d5d-8648-288ea3121ce3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "989x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "02f3315c-3fd7-434c-a06d-31cc0a902c68",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col:nth-child(3)",
+      "targets": [
+        ["css=.col:nth-child(3)", "css:finder"],
+        ["xpath=(//div[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='fixToTop']/div[3]", "xpath:idRelative"],
+        ["xpath=//div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd79d922-54ec-415b-8870-26b8cbd8637a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Change password')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "203c5330-826c-4e25-b2ae-2defb1ab9039",
+      "comment": "",
+      "command": "click",
+      "target": "id=pass",
+      "targets": [
+        ["id=pass", "id"],
+        ["name=old", "name"],
+        ["css=.group:nth-child(1) > #pass", "css:finder"],
+        ["xpath=//input[@id='pass']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a41c1bf3-ad3b-4aa2-82e2-151fcacfb460",
+      "comment": "",
+      "command": "type",
+      "target": "id=pass",
+      "targets": [
+        ["id=pass", "id"],
+        ["name=old", "name"],
+        ["css=.group:nth-child(1) > #pass", "css:finder"],
+        ["xpath=//input[@id='pass']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "sifra12345"
+    }, {
+      "id": "a212383b-67e3-40d0-8fc0-b41a641ea1e3",
+      "comment": "",
+      "command": "click",
+      "target": "name=new",
+      "targets": [
+        ["name=new", "name"],
+        ["css=.group:nth-child(2) > #pass", "css:finder"],
+        ["xpath=(//input[@id='pass'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f35a4e27-ccec-470a-aa19-f5ea9660e77a",
+      "comment": "",
+      "command": "type",
+      "target": "name=new",
+      "targets": [
+        ["name=new", "name"],
+        ["css=.group:nth-child(2) > #pass", "css:finder"],
+        ["xpath=(//input[@id='pass'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "sifra123456"
+    }, {
+      "id": "2103a61c-1eb4-4669-90fd-cbb78babcfca",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button",
+      "targets": [
+        ["css=.button", "css:finder"],
+        ["xpath=//button[@value='Change']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'CHANGE')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f395b247-d487-4600-a936-d273cec3f025",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-sign-out",
+      "targets": [
+        ["css=.fa-sign-out", "css:finder"],
+        ["xpath=//div[@id='fixToTop']/div[5]/a/i", "xpath:idRelative"],
+        ["xpath=//div[5]/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7eb2903f-833a-44a4-b641-77f9c64d2034",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col:nth-child(3)",
+      "targets": [
+        ["css=.col:nth-child(3)", "css:finder"],
+        ["xpath=(//div[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='fixToTop']/div[3]", "xpath:idRelative"],
+        ["xpath=//div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f40b8615-b768-4c70-8e7c-71a8829e5b31",
+      "comment": "",
+      "command": "click",
+      "target": "id=user",
+      "targets": [
+        ["id=user", "id"],
+        ["name=username", "name"],
+        ["css=#user", "css:finder"],
+        ["xpath=//input[@id='user']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf374809-5af4-495b-b38b-7d382be404f4",
+      "comment": "",
+      "command": "type",
+      "target": "id=user",
+      "targets": [
+        ["id=user", "id"],
+        ["name=username", "name"],
+        ["css=#user", "css:finder"],
+        ["xpath=//input[@id='user']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "maximaxi12345"
+    }, {
+      "id": "fae55d6d-e2b7-43c0-90f0-8f7e333f11c4",
+      "comment": "",
+      "command": "click",
+      "target": "id=pass",
+      "targets": [
+        ["id=pass", "id"],
+        ["name=pass", "name"],
+        ["css=#pass", "css:finder"],
+        ["xpath=//input[@id='pass']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "66a56a88-8a19-4468-ad3e-e9f2a3496eba",
+      "comment": "",
+      "command": "type",
+      "target": "id=pass",
+      "targets": [
+        ["id=pass", "id"],
+        ["name=pass", "name"],
+        ["css=#pass", "css:finder"],
+        ["xpath=//input[@id='pass']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "sifra123456"
+    }, {
+      "id": "8b521fc1-3848-482d-9ae4-8b35482b081a",
+      "comment": "",
+      "command": "click",
+      "target": "id=Login",
+      "targets": [
+        ["id=Login", "id"],
+        ["css=#Login", "css:finder"],
+        ["xpath=//input[@id='Login']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ac761a8-f7cc-4b30-b867-db68697a0bb1",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.col-sm-8 > h1",
+      "targets": [
+        ["css=.col-sm-8 > h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Welcome back Maxi')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "a636f19f-af07-4cdf-b39d-5daa723f65bd",
+    "name": "Test - neuspjesna promjena lozinke - pogresna stara lozinka",
+    "commands": [{
+      "id": "f4d7fa93-b833-4c20-86a9-e2027a374e08",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/index.php/Store",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2fce7cc1-ed97-4fda-ba82-e167f79e6f72",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "993x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d8a32b3d-619e-43df-91eb-2f4bf9d684f3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col:nth-child(3)",
+      "targets": [
+        ["css=.col:nth-child(3)", "css:finder"],
+        ["xpath=(//div[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='fixToTop']/div[3]", "xpath:idRelative"],
+        ["xpath=//div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "611f6927-57a3-414c-b1ba-ce69c4daa6d9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Change password')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8af99c43-35e6-4046-8bd6-7e862b75408f",
+      "comment": "",
+      "command": "click",
+      "target": "id=pass",
+      "targets": [
+        ["id=pass", "id"],
+        ["name=old", "name"],
+        ["css=.group:nth-child(1) > #pass", "css:finder"],
+        ["xpath=//input[@id='pass']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "045b9994-abb6-40b4-9244-6747d19f6dd6",
+      "comment": "",
+      "command": "type",
+      "target": "id=pass",
+      "targets": [
+        ["id=pass", "id"],
+        ["name=old", "name"],
+        ["css=.group:nth-child(1) > #pass", "css:finder"],
+        ["xpath=//input[@id='pass']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "sifra1233333"
+    }, {
+      "id": "f1ac45ae-569e-4523-b420-d3fd8230b0be",
+      "comment": "",
+      "command": "click",
+      "target": "name=new",
+      "targets": [
+        ["name=new", "name"],
+        ["css=.group:nth-child(2) > #pass", "css:finder"],
+        ["xpath=(//input[@id='pass'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "50a1a268-97c3-4016-b265-072223350176",
+      "comment": "",
+      "command": "type",
+      "target": "name=new",
+      "targets": [
+        ["name=new", "name"],
+        ["css=.group:nth-child(2) > #pass", "css:finder"],
+        ["xpath=(//input[@id='pass'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "sifra123454"
+    }, {
+      "id": "72c342ad-ec23-47b0-9131-eea734a2b8b2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button",
+      "targets": [
+        ["css=.button", "css:finder"],
+        ["xpath=//button[@value='Change']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'CHANGE')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0a17badd-9ce0-493c-83c4-562bf5beed0b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=p",
+      "targets": [
+        ["css=p", "css:finder"],
+        ["xpath=//p", "xpath:position"]
+      ],
+      "value": "- Wrong password"
+    }]
+  }, {
+    "id": "a78356c0-2a7d-426a-9f73-50153d436f2e",
+    "name": "Test - promjena lozinke - nova lozinka loseg formata(premalo karaktera)",
+    "commands": [{
+      "id": "d25ef2b7-7a76-4275-baef-33a517041352",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/index.php/Store",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9f789ddb-d30a-4da0-89ee-bc29a3fbba4e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "997x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "49ceeb02-d546-49cb-a055-8ba9c070c6fc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col:nth-child(3)",
+      "targets": [
+        ["css=.col:nth-child(3)", "css:finder"],
+        ["xpath=(//div[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='fixToTop']/div[3]", "xpath:idRelative"],
+        ["xpath=//div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "60a41aa1-013c-4e67-8b97-f7f830f0914e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Change password')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d68d122-8bfb-4616-9d72-413e4c4fe017",
+      "comment": "",
+      "command": "click",
+      "target": "id=pass",
+      "targets": [
+        ["id=pass", "id"],
+        ["name=old", "name"],
+        ["css=.group:nth-child(1) > #pass", "css:finder"],
+        ["xpath=//input[@id='pass']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "16c6a044-8d2d-43b5-adea-74db144baac1",
+      "comment": "",
+      "command": "type",
+      "target": "id=pass",
+      "targets": [
+        ["id=pass", "id"],
+        ["name=old", "name"],
+        ["css=.group:nth-child(1) > #pass", "css:finder"],
+        ["xpath=//input[@id='pass']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "sifra123456"
+    }, {
+      "id": "a9055ff6-8e66-43b3-909a-622f87e19c93",
+      "comment": "",
+      "command": "click",
+      "target": "name=new",
+      "targets": [
+        ["name=new", "name"],
+        ["css=.group:nth-child(2) > #pass", "css:finder"],
+        ["xpath=(//input[@id='pass'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "144cdd84-67f8-40a3-ae0a-412e03f81745",
+      "comment": "",
+      "command": "type",
+      "target": "name=new",
+      "targets": [
+        ["name=new", "name"],
+        ["css=.group:nth-child(2) > #pass", "css:finder"],
+        ["xpath=(//input[@id='pass'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "asd"
+    }, {
+      "id": "b6d76de6-a713-424c-8b1c-781dcba359b5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button",
+      "targets": [
+        ["css=.button", "css:finder"],
+        ["xpath=//button[@value='Change']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'CHANGE')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d730fed-cb97-4be2-aab2-06d38f0a5489",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=p",
+      "targets": [
+        ["css=p", "css:finder"],
+        ["xpath=//p", "xpath:position"]
+      ],
+      "value": "- New password must contain a minimum of 8 numbers or letters"
+    }]
+  }, {
+    "id": "5fa19d18-1ae6-4d60-b7b4-bc44ece5c485",
+    "name": "Test - promjena lozinke - nova lozinka sadrzi specijalne karaktere",
+    "commands": [{
+      "id": "d307abdb-4ad2-44e5-a2dc-0729fbdc14ee",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/index.php/User/changePassSubmit",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "84af5461-3e0d-4e99-9e09-b23383fe6e83",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1001x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "57292525-72f9-4d07-9648-b659d196a3c2",
+      "comment": "",
+      "command": "click",
+      "target": "id=pass",
+      "targets": [
+        ["id=pass", "id"],
+        ["name=old", "name"],
+        ["css=.group:nth-child(1) > #pass", "css:finder"],
+        ["xpath=//input[@id='pass']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6ad4b88a-e084-43b4-8f9c-780259b45886",
+      "comment": "",
+      "command": "type",
+      "target": "id=pass",
+      "targets": [
+        ["id=pass", "id"],
+        ["name=old", "name"],
+        ["css=.group:nth-child(1) > #pass", "css:finder"],
+        ["xpath=//input[@id='pass']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "sifra12345"
+    }, {
+      "id": "cb363c7b-b271-4de0-9f10-9ea1fd598667",
+      "comment": "",
+      "command": "click",
+      "target": "name=new",
+      "targets": [
+        ["name=new", "name"],
+        ["css=.group:nth-child(2) > #pass", "css:finder"],
+        ["xpath=(//input[@id='pass'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "017c5834-fb69-4e65-9b77-5baccee3b49d",
+      "comment": "",
+      "command": "type",
+      "target": "name=new",
+      "targets": [
+        ["name=new", "name"],
+        ["css=.group:nth-child(2) > #pass", "css:finder"],
+        ["xpath=(//input[@id='pass'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "sifra12$45"
+    }, {
+      "id": "b9eef026-6de8-444b-9563-70fa8b898edc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button",
+      "targets": [
+        ["css=.button", "css:finder"],
+        ["xpath=//button[@value='Change']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'CHANGE')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c174362b-b3b6-495b-a84c-c9ffcd0d837d",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=p",
+      "targets": [
+        ["css=p", "css:finder"],
+        ["xpath=//p", "xpath:position"]
+      ],
+      "value": "- New password must contain a minimum of 8 numbers or letters"
+    }]
+  }, {
+    "id": "fa57615d-0437-4b65-9fcd-e0837df8fb9a",
+    "name": "Test - logout",
+    "commands": [{
+      "id": "b0eef001-cb43-4cc9-8a17-3910c47a126d",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/index.php/Store",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7c70b657-7176-4da4-97ea-1a67cfc6377a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1003x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e53e8f7f-e8e6-40a0-b25d-e6be66cc5bb5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col:nth-child(4)",
+      "targets": [
+        ["css=.col:nth-child(4)", "css:finder"],
+        ["xpath=(//div[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='fixToTop']/div[4]", "xpath:idRelative"],
+        ["xpath=//div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e07bdef-12bb-4a9e-9306-da7fc3b9d687",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1:nth-child(1)",
+      "targets": [
+        ["css=h1:nth-child(1)", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Make your favourite cocktail at home')]", "xpath:innerText"]
+      ],
+      "value": "Make your favourite cocktail at home"
+    }]
+  }],
+  "suites": [{
+    "id": "4a7ad27b-42d2-4654-9082-e61119ad82b6",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["4b086050-0b32-44ba-9d0d-1e8014b9017d"]
+  }],
+  "urls": ["http://localhost:8080/index.php/Store"],
+  "plugins": []
+}

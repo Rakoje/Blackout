@@ -1,0 +1,325 @@
+.margin-top{
+    margin-top: 20px;
+}
+
+#sendMessage, #searchUsername, #removeComment, #postComment{
+    border-radius: 8px;
+    text-align: center;
+    padding: 5px 15px;
+    background-color: purple;
+    box-shadow: 0 4px #330033;
+}
+textarea{
+    border: 1px solid rgba(0,0,0,.5);
+    background: rgba(0,0,0,.25);
+    border-radius: 10px;
+}
+select option{
+        border: 1px solid rgba(0,0,0,.5) !important;
+        background-color: purple !important;
+         border-radius: 10px !important;
+}
+#picture5 {
+    width: 100%;
+    padding-top: 20px;
+    height: 40%;
+    padding-bottom: 20px;
+    background-image: url("/assets/addNewIngBackground.jpg");
+    background-repeat: no-repeat;
+}
+#login-boxIng {
+  position: relative;
+  left: 10%;
+  width: 20%;
+  text-align: center;
+  padding: 20px 20px 20px 20px;
+  height: 500px;
+  background: rgba(97, 45, 97, 0.7);
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+
+}
+.custom-file-input{
+  content: 'Select some files';
+  display: inline-block;
+  background: linear-gradient(top, #f9f9f9, #e3e3e3);
+  border-radius: 8px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  font-size: 10pt;
+}
+.custom-file-input:hover::before {
+  border-color: black;
+}
+.custom-file-input:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+#submit{
+    background-color: purple;
+}
+#sendMessage:active, #searchUsername:active,#postComment:hover, #removeComment:hover{
+    border-radius: 8px;
+    text-align: center;
+    padding: 5px 15px;
+    border: 1px;
+    box-shadow: 0 0px #666;
+    transform: translateY(4px);
+    background-color: #660066
+}
+
+#sendMessage:hover, #searchUsername:hover, #removeComment:hover, #postComment:hover{
+    border-radius: 8px;
+    text-align: center;
+    padding: 5px 15px;
+    border: 1px;
+    border-color: cornflowerblue;
+    background-color: #660066;
+}
+
+.txt-style{
+    color:antiquewhite;
+    text-align: center;
+}
+a {
+    color: purple;
+}
+a:hover {
+    color: antiquewhite;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: purple;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #990099
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #660066
+}
+
+.border-between > [class*='col-']:before {
+    background: #e3e3e3;
+    bottom: 0;
+    content: " ";
+    left: 0;
+    position: absolute;
+    width: 1px;
+    top: 0;
+ }
+ 
+ .border-between > [class*='col-']:first-child:before {
+    display: none;
+ }
+
+ /* KOKTEL MAJSTOR DODATO */
+
+
+ .bar-text {
+    background-image: linear-gradient(to bottom, rgba(39, 39, 39, 0.52), rgba(117, 19, 93, 0.73)), url('../assets/bar.jpg');
+    background-repeat: no repeat;
+    background-attachment: fixed;
+    background-position: 100% 100%;
+    color: antiquewhite;
+    border: 3px solid #f1f1f1;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .recipe-prof-text{
+    background-image: linear-gradient(to bottom, rgba(39, 39, 39, 0.52), rgba(117, 19, 93, 0.73)), url('../assets/recipeProfil.jpg');
+    background-repeat: no repeat;
+    background-attachment: fixed;
+    color: antiquewhite;
+    border: 3px solid #f1f1f1;
+    
+    padding: 20px;
+    text-align: center; 
+  }
+   .store-text {
+    background-image: linear-gradient(to bottom, rgba(39, 39, 39, 0.52), rgba(117, 19, 93, 0.73)), url('../assets/groceries.jpg');
+    background-repeat: no repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    color: antiquewhite;
+    border: 3px solid #f1f1f1;
+    padding: 20px;
+    text-align: center;
+  }
+ .heading-rating{
+    font-size: 25px;
+  }
+  
+  .fa {
+    font-size: 25px;
+  }
+
+  .unchecked {
+    color: rgb(41, 41, 41);
+  }
+  
+  .checked {
+    color: rgb(99, 11, 99);
+  }
+  
+  /* Three column layout */
+  .side-rating {
+    float: left;
+    width: 15%;
+    margin-top:10px;
+  }
+  
+  .middle-rating {
+    margin-top:10px;
+    float: left;
+    width: 70%;
+  }
+  
+  .right-rating {
+    text-align: right;
+  }
+  
+  /* Clear floats after the columns */
+  .rate:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* The bar container */
+  .bar-container {
+    width: 100%;
+    background-color: antiquewhite;
+    text-align: center;
+    color: antiquewhite;
+  }
+  
+  /* Individual bars */
+  .bar-5 {width: 60%; height: 18px; background-color: rgb(99, 11, 99);}
+  .bar-4 {width: 30%; height: 18px; background-color: rgb(99, 11, 99);}
+  .bar-3 {width: 10%; height: 18px; background-color: rgb(99, 11, 99);}
+  .bar-2 {width: 4%; height: 18px; background-color: rgb(99, 11, 99);}
+  .bar-1 {width: 15%; height: 18px; background-color: rgb(99, 11, 99);}
+  
+  /* Responsive layout - make the columns stack on top of each other instead of next to each other */
+  @media (max-width: 400px) {
+    .side-rating, .middle-rating {
+      width: 100%;
+    }
+    .right-rating {
+      display: none;
+    }
+  }
+
+/* KOKTEL MAJSTOR RECEPT*/
+
+.rating-css {
+    margin: auto;
+  }
+.rating-css div {
+    color: rgb(99, 11, 99);
+  }
+.rating-css input {
+    display: none;
+  }
+.rating-css input + label {
+    cursor: pointer;
+  }
+.rating-css input:checked + label ~ label {
+    color:  rgb(41, 41, 41);
+  }
+  
+.rating-css label:active {
+    transform: scale(0.8);
+    transition: 0.3s ease;
+  }
+
+/* KOMENTARI */
+
+.card {
+    border: none;
+    border-radius: 4px
+}
+
+.dots {
+    height: 4px;
+    width: 4px;
+    margin-bottom: 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block
+}
+
+.badge {
+    padding: 7px;
+    padding-right: 9px;
+    padding-left: 16px;
+}
+
+.user-img {
+    margin-top: 4px
+}
+
+.check-icon {
+    font-size: 17px;
+    color: #c3bfbf;
+    top: 1px;
+    position: relative;
+    margin-left: 3px
+}
+
+.form-check-input {
+    margin-top: 6px;
+    margin-left: -24px !important;
+    cursor: pointer
+}
+
+.form-check-input:focus {
+    box-shadow: none
+}
+
+.icons i {
+    margin-left: 8px
+}
+
+.reply {
+    margin-left: 12px
+}
+
+.reply small {
+    color: #b7b4b4
+}
+
+.reply small:hover {
+    color: #949494;
+    cursor: pointer
+}
+
+/* KOKTEL MAJSTOR NOVI RECEPT */
+
+.recipe-background {
+  background-image: linear-gradient(to bottom, rgba(39, 39, 39, 0.52), rgba(117, 19, 93, 0.73)), url("../assets/recipeBackground.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.recipe-form {
+  
+  margin: auto;
+  background: rgba(99, 11, 99, 0.418);
+  border-radius: 2px;
+  border-radius: 10px;
+}

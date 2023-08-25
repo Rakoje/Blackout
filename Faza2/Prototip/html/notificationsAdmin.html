@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!--Dusan Terzic-->
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="../css/messages.css">
+    <link rel="stylesheet" href="../css/blackout.css">
+    <link rel="stylesheet" href="../css/style.css">
+	<title>Notifications</title>
+</head>
+<body class="dark-purple">
+    <nav class="navbar navbar-expand-lg navbar-dark purple">
+		<a class="navbar-brand" href="#"><img class="margin-left" src="../assets/logo.png" width="10%" height="10%"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse purple" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="indexAdmin.html">Home</a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="searchAdmin.html">Search</a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="notificationsAdmin.html">Notifications</a>
+				</li>
+				<li class="nav-item margin-right">
+					<a class = "nav-link wordwrap"  href="myProfileAdmin.html">My Profile</a>
+				</li>
+				<li class="nav-item margin-right">
+					<a class = "nav-link wordwrap"  href="index.html">Log out</a>
+				</li>
+			</ul>
+		</div>
+	</nav>   
+    </br>
+	<div class="main-section">
+		<div class="head-section">
+			<div class="headLeft-section">
+				<div class="headLeft-sub">
+					<input type="text" name="search" placeholder="Search...">
+					<button> <i class="fa fa-search"></i> </button>
+				</div>
+			</div>
+			<div class="headRight-section">
+				<div class="headRight-sub">
+					<h3>User3</h3>
+					<small style = "color: green;">Active</small>
+				</div>
+			</div>
+		</div>
+		<div class="body-section">
+			<div class="left-section mCustomScrollbar" data-mcs-theme="minimal-dark">
+				<ul>
+					<li>
+						<div class="chatList">
+							<div class="img">
+								<i class="fa fa-circle"></i>
+								<img src="../assets/profile.jpg">
+							</div>
+							<div class="desc">
+								<small class="time">05:30 am</small>
+								<h5>User1</h5>
+								<small>You have a new request from a user...</small>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="chatList">
+							<div class="img">
+								<i class="fa fa-circle"></i>
+								<img src="../assets/profile.jpg">
+							</div>
+							<div class="desc">
+								<small class="time">3 day</small>
+								<h5>User2</h5>
+								<small>You have a new request from a user...</small>
+							</div>
+						</div>
+					</li>
+					<li class="active">
+						<div class="chatList">
+							<div class="img">
+								<img src="../assets/profile.jpg">
+							</div>
+							<div class="desc">
+								<small class="time">4 day</small>
+								<h5>User3</h5>
+								<small>You have a new request from a user...</small>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="right-section">
+				<div class="message mCustomScrollbar" data-mcs-theme="minimal-dark">
+					<ul>
+						<li class="msg-left">
+							<div class="msg-left-sub">
+								<img src="../assets/profile.jpg">
+								<div class="msg-desc">
+                                    You have a new request from a user named Dusan Terzić. The name of the product is Tonic Water. No picture was attached. Click yes to approve, click no to reject.
+									<p><button class="btn btn-success">YES</button>
+									<button class="btn btn-danger">NO</button></p>
+								</div>
+								<small>05:25 pm</small>
+							</div>
+						</li>
+						
+					</ul>
+				</div>
+				<div class="right-section-bottom">
+					<form>
+						<div class="upload-btn">
+						  	<button class="btn"><i class="fa fa-photo"></i></button>
+						  	<input type="file" name="myfile" />
+						</div>
+						<input type="text" name="" placeholder="type here...">
+						<button class="btn-send"><i class="fa fa-send"></i></button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<!-- custom scrollbar plugin -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+</body>
+</html>

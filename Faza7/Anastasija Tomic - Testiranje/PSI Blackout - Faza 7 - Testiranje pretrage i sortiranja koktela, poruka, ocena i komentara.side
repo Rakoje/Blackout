@@ -1,0 +1,5583 @@
+{
+  "id": "99cbbe5e-d572-48da-8850-e7e5b787049e",
+  "version": "2.0",
+  "name": "PSI Blackout - Faza 7",
+  "url": "localhost:8080",
+  "tests": [{
+    "id": "bdec5844-546d-4ce3-9e47-62b049c31d03",
+    "name": "TP01_UspesnoPretrazivanjeKoktelaKodGostaPrekoImena",
+    "commands": [{
+      "id": "42110f61-3db5-470a-ad97-c73641cf022a",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/index.php/Guest",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8750727e-a60a-4951-9247-11786c9187c7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ba502c67-e030-4674-853a-8a527347414c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col:nth-child(2)",
+      "targets": [
+        ["css=.col:nth-child(2)", "css:finder"],
+        ["xpath=(//div[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='fixToTop']/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "80e384d6-3759-4035-9eec-c1f41dae6091",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(7) .filter-option-inner-inner",
+      "targets": [
+        ["css=.row:nth-child(7) .filter-option-inner-inner", "css:finder"],
+        ["xpath=//div[2]/div/div/div[2]/div/button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "03f0f6e2-7090-4f8f-a3eb-c4158e2c4c75",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bs-select-2-0 > .text",
+      "targets": [
+        ["css=#bs-select-2-0 > .text", "css:finder"],
+        ["xpath=//a[@id='bs-select-2-0']/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Blush martini')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d31b0d98-29c6-41ad-8deb-e743cebf3634",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1:nth-child(3)",
+      "targets": [
+        ["css=h1:nth-child(3)", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Blush martini')]", "xpath:innerText"]
+      ],
+      "value": "Blush martini"
+    }, {
+      "id": "fc4545df-fbab-4e5b-88fc-6c9f52bbabe9",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "3713e457-6d79-47f6-9591-5b5d58249dd2",
+    "name": "TP02_UspesnoPretrazivanjeKoktelaKodGostaZaKoktelKojiMozeDaNapraviOdSastojaka",
+    "commands": [{
+      "id": "ff663752-ce12-41b2-8ad6-25ad6060f64d",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/index.php/Guest",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e1f41304-b6a9-4956-a1c2-ad28706594bb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a467c258-0a47-41cd-97a7-73aaae02a195",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col:nth-child(2)",
+      "targets": [
+        ["css=.col:nth-child(2)", "css:finder"],
+        ["xpath=(//div[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='fixToTop']/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b6028a0a-bfd1-45a2-9596-c03d383a25e3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(1) > .col-sm-12 .filter-option-inner-inner",
+      "targets": [
+        ["css=.row:nth-child(1) > .col-sm-12 .filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e07d11ae-4011-481c-80f3-14b2b50f2a99",
+      "comment": "",
+      "command": "type",
+      "target": "css=.show > .bs-searchbox > .form-control",
+      "targets": [
+        ["css=.show > .bs-searchbox > .form-control", "css:finder"],
+        ["xpath=//input[@type='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "slo"
+    }, {
+      "id": "5370f2e5-11b4-4f4f-8060-35831952b239",
+      "comment": "",
+      "command": "click",
+      "target": "id=bs-select-1-12",
+      "targets": [
+        ["id=bs-select-1-12", "id"],
+        ["linkText=Sloe gin", "linkText"],
+        ["css=#bs-select-1-12", "css:finder"],
+        ["xpath=//a[@id='bs-select-1-12']", "xpath:attributes"],
+        ["xpath=//div[@id='bs-select-1']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sloe gin')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1298ce8-53ab-45e5-9f74-4fe803e65d55",
+      "comment": "",
+      "command": "select",
+      "target": "id=select-country",
+      "targets": [],
+      "value": "label=Sloe gin"
+    }, {
+      "id": "0a1a7280-f944-45cf-8036-0e755b77102b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(1) > .col-sm-12 .filter-option-inner-inner",
+      "targets": [
+        ["css=.row:nth-child(1) > .col-sm-12 .filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "86fd102a-fd2b-45fa-a7d3-c6343cb1c980",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.row:nth-child(1) > .col-sm-12 .filter-option-inner-inner",
+      "targets": [
+        ["css=.row:nth-child(1) > .col-sm-12 .filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c70c0ad1-f42b-47a8-a9fa-424d13c88e81",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.show .filter-option-inner-inner",
+      "targets": [
+        ["css=.show .filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "10490f22-f926-4145-96f7-4e614063528e",
+      "comment": "",
+      "command": "type",
+      "target": "css=.show > .bs-searchbox > .form-control",
+      "targets": [
+        ["css=.show > .bs-searchbox > .form-control", "css:finder"],
+        ["xpath=//input[@type='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "or"
+    }, {
+      "id": "48d61bb5-41cc-4368-99c0-f98f20943d3e",
+      "comment": "",
+      "command": "click",
+      "target": "id=bs-select-1-11",
+      "targets": [
+        ["id=bs-select-1-11", "id"],
+        ["linkText=Orange", "linkText"],
+        ["css=#bs-select-1-11", "css:finder"],
+        ["xpath=//a[@id='bs-select-1-11']", "xpath:attributes"],
+        ["xpath=//div[@id='bs-select-1']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Orange')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3a38b40-acec-4653-beb6-f06caefd3bb4",
+      "comment": "",
+      "command": "select",
+      "target": "id=select-country",
+      "targets": [],
+      "value": "label=Orange"
+    }, {
+      "id": "51bc3293-dd40-4ad1-883c-22b1836114b0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(1) > .col-sm-12 .filter-option-inner-inner",
+      "targets": [
+        ["css=.row:nth-child(1) > .col-sm-12 .filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1270746a-ceb8-45d8-bba5-c8a320970903",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.row:nth-child(1) > .col-sm-12 .filter-option-inner-inner",
+      "targets": [
+        ["css=.row:nth-child(1) > .col-sm-12 .filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "da59b669-1145-4b7e-821c-39901124072c",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.show .filter-option-inner-inner",
+      "targets": [
+        ["css=.show .filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0135750c-82be-4ac6-a91f-63d497c305c4",
+      "comment": "",
+      "command": "type",
+      "target": "css=.show > .bs-searchbox > .form-control",
+      "targets": [
+        ["css=.show > .bs-searchbox > .form-control", "css:finder"],
+        ["xpath=//input[@type='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "th"
+    }, {
+      "id": "1222d78d-2029-4467-94d0-6931946f4337",
+      "comment": "",
+      "command": "click",
+      "target": "id=bs-select-1-4",
+      "targets": [
+        ["id=bs-select-1-4", "id"],
+        ["linkText=Extra-dry vermouth", "linkText"],
+        ["css=#bs-select-1-4", "css:finder"],
+        ["xpath=//a[@id='bs-select-1-4']", "xpath:attributes"],
+        ["xpath=//div[@id='bs-select-1']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Extra-dry vermouth')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c8279d43-2d71-47d1-b2bc-6b328fe94f3c",
+      "comment": "",
+      "command": "select",
+      "target": "id=select-country",
+      "targets": [],
+      "value": "label=Extra-dry vermouth"
+    }, {
+      "id": "f8cd7a55-0f1f-45bc-901f-43ac82e872e7",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-2:nth-child(3)",
+      "targets": [
+        ["css=.col-sm-2:nth-child(3)", "css:finder"],
+        ["xpath=(//div[@id=''])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='add']/div[3]", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]", "xpath:position"]
+      ],
+      "value": "Extra-dry vermouth"
+    }, {
+      "id": "45b31763-87f0-4767-8ce2-0e8f64258532",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(1) > .col-sm-12 .filter-option-inner-inner",
+      "targets": [
+        ["css=.row:nth-child(1) > .col-sm-12 .filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7edacc1d-8ab2-4372-9ebe-f888f916fb54",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.row:nth-child(1) > .col-sm-12 .filter-option-inner-inner",
+      "targets": [
+        ["css=.row:nth-child(1) > .col-sm-12 .filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "490584a9-9eee-4056-9bd2-4e10ac2dc69f",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.show .filter-option-inner-inner",
+      "targets": [
+        ["css=.show .filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e20cd7f-5880-4f07-8e96-8f9363889101",
+      "comment": "",
+      "command": "type",
+      "target": "css=.show > .bs-searchbox > .form-control",
+      "targets": [
+        ["css=.show > .bs-searchbox > .form-control", "css:finder"],
+        ["xpath=//input[@type='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "th"
+    }, {
+      "id": "5ea1452b-05f4-47ab-8b33-6d27b56dd6f7",
+      "comment": "",
+      "command": "click",
+      "target": "id=bs-select-1-16",
+      "targets": [
+        ["id=bs-select-1-16", "id"],
+        ["linkText=Thyme", "linkText"],
+        ["css=#bs-select-1-16", "css:finder"],
+        ["xpath=//a[@id='bs-select-1-16']", "xpath:attributes"],
+        ["xpath=//div[@id='bs-select-1']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Thyme')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c53ec209-3b73-4355-b4e9-a7dad9624151",
+      "comment": "",
+      "command": "select",
+      "target": "id=select-country",
+      "targets": [],
+      "value": "label=Thyme"
+    }, {
+      "id": "894286b4-1062-4a79-9e33-5b38bd171362",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(1) > .col-sm-12 .dropdown > .btn",
+      "targets": [
+        ["css=.row:nth-child(1) > .col-sm-12 .dropdown > .btn", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Thyme')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d32e0b8-edfe-44fb-846b-ad5e2ae85f6c",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.row:nth-child(1) > .col-sm-12 .dropdown > .btn",
+      "targets": [
+        ["css=.row:nth-child(1) > .col-sm-12 .dropdown > .btn", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Thyme')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ba21e74-57e3-4331-a6ed-6439f043a012",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.show > .btn",
+      "targets": [
+        ["css=.show > .btn", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Thyme')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "393eed45-ae1d-4858-ad45-40599e04e671",
+      "comment": "",
+      "command": "type",
+      "target": "css=.show > .bs-searchbox > .form-control",
+      "targets": [
+        ["css=.show > .bs-searchbox > .form-control", "css:finder"],
+        ["xpath=//input[@type='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "c"
+    }, {
+      "id": "345bbdac-ba32-40cf-b90b-dac8180ce34f",
+      "comment": "",
+      "command": "click",
+      "target": "id=bs-select-1-2",
+      "targets": [
+        ["id=bs-select-1-2", "id"],
+        ["linkText=Campari", "linkText"],
+        ["css=#bs-select-1-2", "css:finder"],
+        ["xpath=//a[@id='bs-select-1-2']", "xpath:attributes"],
+        ["xpath=//div[@id='bs-select-1']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Campari')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ce7069d-7a46-4b54-9206-8801159d82ac",
+      "comment": "",
+      "command": "select",
+      "target": "id=select-country",
+      "targets": [],
+      "value": "label=Campari"
+    }, {
+      "id": "cc03c9f9-8194-41ea-9c38-db627cc50f78",
+      "comment": "",
+      "command": "click",
+      "target": "css=.searchByIng > .fa",
+      "targets": [
+        ["css=.searchByIng > .fa", "css:finder"],
+        ["xpath=//button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "722f3a74-c3a0-4771-8ed7-2a9fae27a73c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4 > p",
+      "targets": [
+        ["css=.col-sm-4 > p", "css:finder"],
+        ["xpath=//div[@id='makeable']/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Sloe gin Negroni')]", "xpath:innerText"]
+      ],
+      "value": "Sloe gin Negroni"
+    }, {
+      "id": "70349156-272a-47b6-8dde-202c722ec669",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "de029506-f181-4980-8029-efb0fcfca3d0",
+    "name": "TP03_UspesnoPretrazivanjeKoktelaKodGostaKadaFali3IliManjeSastojaka",
+    "commands": [{
+      "id": "0e4db0d8-b775-4534-a7cf-af88c3bb3e37",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/index.php/Guest",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "752810d8-69f0-4f76-8de7-40aa2b0250bb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e9aae928-f5fb-4177-a600-8bcca39840f7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-search",
+      "targets": [
+        ["css=.fa-search", "css:finder"],
+        ["xpath=//div[@id='fixToTop']/div[2]/a/i", "xpath:idRelative"],
+        ["xpath=//div[2]/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "491b738f-2b06-4a29-bf87-c9a67a4f39b6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(1) > .col-sm-12 .filter-option-inner-inner",
+      "targets": [
+        ["css=.row:nth-child(1) > .col-sm-12 .filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "598044f1-acb2-45d1-906b-af671fbe15db",
+      "comment": "",
+      "command": "type",
+      "target": "css=.show > .bs-searchbox > .form-control",
+      "targets": [
+        ["css=.show > .bs-searchbox > .form-control", "css:finder"],
+        ["xpath=//input[@type='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "o"
+    }, {
+      "id": "0cec3a22-bce4-4cfe-99a3-0510e02af340",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bs-select-1-11 > .text",
+      "targets": [
+        ["css=#bs-select-1-11 > .text", "css:finder"],
+        ["xpath=//a[@id='bs-select-1-11']/span", "xpath:idRelative"],
+        ["xpath=//li[6]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Orange')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1f4fef22-f4d2-40a0-942e-0c2abf5e5ee8",
+      "comment": "",
+      "command": "select",
+      "target": "id=select-country",
+      "targets": [],
+      "value": "label=Orange"
+    }, {
+      "id": "e357ad13-160d-44d1-b53e-4343c0496b4c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(1) > .col-sm-12 .filter-option-inner-inner",
+      "targets": [
+        ["css=.row:nth-child(1) > .col-sm-12 .filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c91d195-602b-4e68-9224-73128f2f6322",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.row:nth-child(1) > .col-sm-12 .filter-option-inner-inner",
+      "targets": [
+        ["css=.row:nth-child(1) > .col-sm-12 .filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "65133938-f9b9-47a4-9315-d1c360bbb0bd",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.show .filter-option-inner-inner",
+      "targets": [
+        ["css=.show .filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c0ae59e-aabb-47fc-b5be-a61e46fd6ee1",
+      "comment": "",
+      "command": "type",
+      "target": "css=.show > .bs-searchbox > .form-control",
+      "targets": [
+        ["css=.show > .bs-searchbox > .form-control", "css:finder"],
+        ["xpath=//input[@type='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "s"
+    }, {
+      "id": "b2ae4214-2f7c-4b0f-8412-95477afd7446",
+      "comment": "",
+      "command": "click",
+      "target": "id=bs-select-1-12",
+      "targets": [
+        ["id=bs-select-1-12", "id"],
+        ["linkText=Sloe gin", "linkText"],
+        ["css=#bs-select-1-12", "css:finder"],
+        ["xpath=//a[@id='bs-select-1-12']", "xpath:attributes"],
+        ["xpath=//div[@id='bs-select-1']/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sloe gin')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8d293477-176f-4f15-a372-a673c12932e3",
+      "comment": "",
+      "command": "select",
+      "target": "id=select-country",
+      "targets": [],
+      "value": "label=Sloe gin"
+    }, {
+      "id": "6d041242-8506-419d-8ae7-c143269b1099",
+      "comment": "",
+      "command": "click",
+      "target": "css=.searchByIng > .fa",
+      "targets": [
+        ["css=.searchByIng > .fa", "css:finder"],
+        ["xpath=//button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d1e0e69-2633-4df1-bc81-2ab2558f4168",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4 > p",
+      "targets": [
+        ["css=.col-sm-4 > p", "css:finder"],
+        ["xpath=//div[@id='makeableMissing']/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Sloe gin Negroni')]", "xpath:innerText"]
+      ],
+      "value": "Sloe gin Negroni"
+    }, {
+      "id": "e2c12bf2-a252-41f8-9949-f34324c0b258",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "ba7dae1a-6732-43a6-a290-627ffb632af2",
+    "name": "TP04_NeuspesnoPretrazivanjeKoktelaKodGosta_MaloSastojaka",
+    "commands": [{
+      "id": "caf5afb6-9b88-4d09-ba68-333bd438c173",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/index.php/Guest",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5e323b98-6512-4cf6-a370-efb80f619cc0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8cf68023-3a74-4ca3-ab0a-1a756977ac53",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col:nth-child(2)",
+      "targets": [
+        ["css=.col:nth-child(2)", "css:finder"],
+        ["xpath=(//div[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='fixToTop']/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d68fe933-22ba-43ed-b13f-0e41dea2f05b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(1) > .col-sm-12 .filter-option-inner-inner",
+      "targets": [
+        ["css=.row:nth-child(1) > .col-sm-12 .filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f21ccf03-76b6-4710-b3fb-e1eb618f3ab4",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bs-select-1-0 > .text",
+      "targets": [
+        ["css=#bs-select-1-0 > .text", "css:finder"],
+        ["xpath=//a[@id='bs-select-1-0']/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Angostura bitters')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5fe00149-78a7-46f0-ba8f-008b80ff0684",
+      "comment": "",
+      "command": "click",
+      "target": "css=.searchByIng",
+      "targets": [
+        ["css=.searchByIng", "css:finder"],
+        ["xpath=//span/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ddda497e-714f-43a4-bd14-667893b4f379",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#makeable > h4",
+      "targets": [
+        ["css=#makeable > h4", "css:finder"],
+        ["xpath=//div[@id='makeable']/h4", "xpath:idRelative"],
+        ["xpath=//h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'No results to show.')]", "xpath:innerText"]
+      ],
+      "value": "No results to show."
+    }, {
+      "id": "99e142a6-2ffc-4fcf-b7f6-d60bc1cd3156",
+      "comment": "",
+      "command": "click",
+      "target": "css=#makeableMissing > h4",
+      "targets": [
+        ["css=#makeableMissing > h4", "css:finder"],
+        ["xpath=//div[@id='makeableMissing']/h4", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div/h4", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "446e23d1-c5c2-4408-a558-060ae3769acb",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#makeableMissing > h4",
+      "targets": [
+        ["css=#makeableMissing > h4", "css:finder"],
+        ["xpath=//div[@id='makeableMissing']/h4", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div/h4", "xpath:position"]
+      ],
+      "value": "No results to show."
+    }, {
+      "id": "180698bf-cdac-4bf2-ae8e-188fac318de2",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "abf004e0-5338-4857-8dae-9bb0bba67b02",
+    "name": "TP05_UspesnoPretrazivanjeKoktelaKodKorisnikaPrekoImena",
+    "commands": [{
+      "id": "7caeaa30-55a3-49f5-b31b-0565e3d57b3a",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/index.php/Guest",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5583a017-5f90-4b65-823f-abf7c35c0f5a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bd0db36c-b597-4839-b29b-7c3e4f3a7530",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col:nth-child(3)",
+      "targets": [
+        ["css=.col:nth-child(3)", "css:finder"],
+        ["xpath=(//div[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='fixToTop']/div[3]", "xpath:idRelative"],
+        ["xpath=//div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "87110c81-3295-4875-92fc-f38d8a424a4b",
+      "comment": "",
+      "command": "click",
+      "target": "id=user",
+      "targets": [
+        ["id=user", "id"],
+        ["name=username", "name"],
+        ["css=#user", "css:finder"],
+        ["xpath=//input[@id='user']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7eca7d33-a673-44c9-9870-0c5779ee7fca",
+      "comment": "",
+      "command": "type",
+      "target": "id=user",
+      "targets": [
+        ["id=user", "id"],
+        ["name=username", "name"],
+        ["css=#user", "css:finder"],
+        ["xpath=//input[@id='user']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "anastasija123"
+    }, {
+      "id": "7ac71af6-e087-4365-8b67-9e229d48f5f2",
+      "comment": "",
+      "command": "click",
+      "target": "id=pass",
+      "targets": [
+        ["id=pass", "id"],
+        ["name=pass", "name"],
+        ["css=#pass", "css:finder"],
+        ["xpath=//input[@id='pass']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e17b7237-013c-44e6-83d8-cdd2db1deebd",
+      "comment": "",
+      "command": "type",
+      "target": "id=pass",
+      "targets": [
+        ["id=pass", "id"],
+        ["name=pass", "name"],
+        ["css=#pass", "css:finder"],
+        ["xpath=//input[@id='pass']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "sifra12345"
+    }, {
+      "id": "b82702d6-7bc0-4194-8043-4325da3f823f",
+      "comment": "",
+      "command": "click",
+      "target": "id=Login",
+      "targets": [
+        ["id=Login", "id"],
+        ["css=#Login", "css:finder"],
+        ["xpath=//input[@id='Login']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f1a0675-6237-49cd-b2ce-faa9d4f0e524",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col:nth-child(4)",
+      "targets": [
+        ["css=.col:nth-child(4)", "css:finder"],
+        ["xpath=(//div[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='fixToTop']/div[4]", "xpath:idRelative"],
+        ["xpath=//div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8836c77-1cd9-4b7c-a812-838c3fac7deb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col:nth-child(2)",
+      "targets": [
+        ["css=.col:nth-child(2)", "css:finder"],
+        ["xpath=(//div[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='fixToTop']/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bed6925e-eab9-4405-8b7d-e9860ab2cce0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.filter-option-inner-inner",
+      "targets": [
+        ["css=.filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "32e1b3eb-ff00-4842-884e-2eb67dd63b57",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bs-select-1-0 > .text",
+      "targets": [
+        ["css=#bs-select-1-0 > .text", "css:finder"],
+        ["xpath=//a[@id='bs-select-1-0']/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Sloe gin Negroni')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b01c0a0-5e9a-4f98-b3a5-97f2d249674a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1:nth-child(3)",
+      "targets": [
+        ["css=h1:nth-child(3)", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Sloe gin Negroni')]", "xpath:innerText"]
+      ],
+      "value": "Sloe gin Negroni"
+    }, {
+      "id": "42675c19-d231-4828-9da5-563705860139",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "1e5947bb-9e7b-4c25-a61e-04806e0f72b2",
+    "name": "TP06_UspesnoPretrazivanjeKoktelaKodKorisnikaZaKoktelKojiMozeDaNapraviOdSastojaka",
+    "commands": [{
+      "id": "c7b588aa-243e-4678-acdf-4f058a611d5c",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/index.php/Guest",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7aab77f1-10fd-438c-97a0-79dd2f40dec0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "98ebbef0-6bee-4f69-8dce-1fd6256df089",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col:nth-child(3)",
+      "targets": [
+        ["css=.col:nth-child(3)", "css:finder"],
+        ["xpath=(//div[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='fixToTop']/div[3]", "xpath:idRelative"],
+        ["xpath=//div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d08f430d-f241-4e4d-b049-1b38389e5f60",
+      "comment": "",
+      "command": "click",
+      "target": "id=user",
+      "targets": [
+        ["id=user", "id"],
+        ["name=username", "name"],
+        ["css=#user", "css:finder"],
+        ["xpath=//input[@id='user']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd49e761-3720-4994-8a8d-c50ceba2f769",
+      "comment": "",
+      "command": "type",
+      "target": "id=user",
+      "targets": [
+        ["id=user", "id"],
+        ["name=username", "name"],
+        ["css=#user", "css:finder"],
+        ["xpath=//input[@id='user']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "anastasija123"
+    }, {
+      "id": "5cff88a8-061a-4da1-a4b1-8f3c88ea5c5a",
+      "comment": "",
+      "command": "click",
+      "target": "id=pass",
+      "targets": [
+        ["id=pass", "id"],
+        ["name=pass", "name"],
+        ["css=#pass", "css:finder"],
+        ["xpath=//input[@id='pass']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f6024fb-e7e0-4a6d-8aee-dcf86fff3897",
+      "comment": "",
+      "command": "type",
+      "target": "id=pass",
+      "targets": [
+        ["id=pass", "id"],
+        ["name=pass", "name"],
+        ["css=#pass", "css:finder"],
+        ["xpath=//input[@id='pass']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "sifra12345"
+    }, {
+      "id": "0921eb5c-8d46-4cf4-8982-afaf5570f8f5",
+      "comment": "",
+      "command": "click",
+      "target": "id=Login",
+      "targets": [
+        ["id=Login", "id"],
+        ["css=#Login", "css:finder"],
+        ["xpath=//input[@id='Login']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "edb3d4da-a94d-4b60-a9f6-0d1e5cbf9592",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col:nth-child(4)",
+      "targets": [
+        ["css=.col:nth-child(4)", "css:finder"],
+        ["xpath=(//div[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='fixToTop']/div[4]", "xpath:idRelative"],
+        ["xpath=//div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "04226749-85ed-42e4-9ec6-5f3d0c3ac829",
+      "comment": "",
+      "command": "click",
+      "target": "css=.filter-option-inner-inner",
+      "targets": [
+        ["css=.filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7830ad9f-964e-4239-9930-705223b45308",
+      "comment": "",
+      "command": "type",
+      "target": "css=.bs-searchbox > .form-control",
+      "targets": [
+        ["css=.bs-searchbox > .form-control", "css:finder"],
+        ["xpath=//input[@type='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "c"
+    }, {
+      "id": "0b06e048-1e51-4625-bdb7-09916cfab8fa",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bs-select-1-2 > .text",
+      "targets": [
+        ["css=#bs-select-1-2 > .text", "css:finder"],
+        ["xpath=//a[@id='bs-select-1-2']/span", "xpath:idRelative"],
+        ["xpath=//li[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Campari')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf4dd77d-903d-4297-9500-a04ba07b3671",
+      "comment": "",
+      "command": "select",
+      "target": "id=select-country",
+      "targets": [],
+      "value": "label=Campari"
+    }, {
+      "id": "3a5fb773-8af6-4950-9916-ec7dc3b07ecc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.filter-option-inner-inner",
+      "targets": [
+        ["css=.filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "60582a35-f5c6-4fad-adc4-5dea07f616d8",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.filter-option-inner-inner",
+      "targets": [
+        ["css=.filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "53eb1398-6903-45b6-8cc8-52fe760695bd",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.filter-option-inner-inner",
+      "targets": [
+        ["css=.filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b4e7bbb-49d4-44a4-965c-357dc4e3ce4d",
+      "comment": "",
+      "command": "type",
+      "target": "css=.bs-searchbox > .form-control",
+      "targets": [
+        ["css=.bs-searchbox > .form-control", "css:finder"],
+        ["xpath=//input[@type='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "o"
+    }, {
+      "id": "cf473053-6e69-4807-86bb-51cd8f2677ad",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bs-select-1-11 > .text",
+      "targets": [
+        ["css=#bs-select-1-11 > .text", "css:finder"],
+        ["xpath=//a[@id='bs-select-1-11']/span", "xpath:idRelative"],
+        ["xpath=//li[6]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Orange')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7fb54709-4534-4112-b163-51607df5025c",
+      "comment": "",
+      "command": "select",
+      "target": "id=select-country",
+      "targets": [],
+      "value": "label=Orange"
+    }, {
+      "id": "3ab5f30c-9d54-4aca-abe1-f9b9558dbc9c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.filter-option-inner-inner",
+      "targets": [
+        ["css=.filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a15cc84-2f28-4566-af13-a247833d8a40",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.filter-option-inner-inner",
+      "targets": [
+        ["css=.filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b65e28d0-df94-48b0-b8df-c1f9fe7b3477",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.filter-option-inner-inner",
+      "targets": [
+        ["css=.filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "65ae1aac-4a42-45b4-9446-9d1f4270ca58",
+      "comment": "",
+      "command": "type",
+      "target": "css=.bs-searchbox > .form-control",
+      "targets": [
+        ["css=.bs-searchbox > .form-control", "css:finder"],
+        ["xpath=//input[@type='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "s"
+    }, {
+      "id": "6d78766d-de75-419d-8663-9459929006a0",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bs-select-1-12 > .text",
+      "targets": [
+        ["css=#bs-select-1-12 > .text", "css:finder"],
+        ["xpath=//a[@id='bs-select-1-12']/span", "xpath:idRelative"],
+        ["xpath=//li[6]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Sloe gin')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c73c8186-ff74-4d5a-a6aa-a6a35e5d1b26",
+      "comment": "",
+      "command": "select",
+      "target": "id=select-country",
+      "targets": [],
+      "value": "label=Sloe gin"
+    }, {
+      "id": "cebca908-da5b-43e3-9ff0-837d525e7c1b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.filter-option-inner-inner",
+      "targets": [
+        ["css=.filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7dfaae1-57e0-483b-af3e-7a334357dc5d",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.filter-option-inner-inner",
+      "targets": [
+        ["css=.filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d117b787-ac99-4faf-a33f-77a46bad7f11",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.filter-option-inner-inner",
+      "targets": [
+        ["css=.filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f2992002-c19e-47a8-9672-55a820b6750a",
+      "comment": "",
+      "command": "type",
+      "target": "css=.bs-searchbox > .form-control",
+      "targets": [
+        ["css=.bs-searchbox > .form-control", "css:finder"],
+        ["xpath=//input[@type='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "ex"
+    }, {
+      "id": "1741ca28-2fad-42fa-ae0b-14e8ab922722",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text",
+      "targets": [
+        ["css=.text", "css:finder"],
+        ["xpath=//a[@id='bs-select-1-4']/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Extra-dry vermouth')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "363b7cad-72da-4bda-b8f1-faaf4569f0bf",
+      "comment": "",
+      "command": "select",
+      "target": "id=select-country",
+      "targets": [],
+      "value": "label=Extra-dry vermouth"
+    }, {
+      "id": "42427d8a-fda4-4cac-945d-751cae6b70d4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.filter-option-inner-inner",
+      "targets": [
+        ["css=.filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2aaed8e-5ae9-4c66-b70a-c01a06c4b484",
+      "comment": "",
+      "command": "type",
+      "target": "css=.bs-searchbox > .form-control",
+      "targets": [
+        ["css=.bs-searchbox > .form-control", "css:finder"],
+        ["xpath=//input[@type='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "t"
+    }, {
+      "id": "1f98e0ce-7d02-45c6-a913-515e1ca16c05",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bs-select-1-16 > .text",
+      "targets": [
+        ["css=#bs-select-1-16 > .text", "css:finder"],
+        ["xpath=//a[@id='bs-select-1-16']/span", "xpath:idRelative"],
+        ["xpath=//li[6]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Thyme')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f5e9dac-8147-46ac-9c80-b9a7d24f6c1d",
+      "comment": "",
+      "command": "select",
+      "target": "id=select-country",
+      "targets": [],
+      "value": "label=Thyme"
+    }, {
+      "id": "3f5c0349-3e8b-44b5-8836-31375eba65cb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col:nth-child(2)",
+      "targets": [
+        ["css=.col:nth-child(2)", "css:finder"],
+        ["xpath=(//div[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='fixToTop']/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "59d20cbf-5f46-4fd0-bbb5-3f9ac2741506",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4 > p",
+      "targets": [
+        ["css=.col-sm-4 > p", "css:finder"],
+        ["xpath=//div[@id='makeable']/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Sloe gin Negroni')]", "xpath:innerText"]
+      ],
+      "value": "Sloe gin Negroni"
+    }, {
+      "id": "5c33507f-78bd-41dc-bd9f-d682bdd76a6a",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "e4a4b793-4ce0-40a9-816b-bff7d4271575",
+    "name": "TP07_UspesnoPretrazivanjeKoktelaKodKorisnikaKadaFali3IliManjeSastojaka",
+    "commands": [{
+      "id": "3bd037b5-1db2-4359-9096-1fdd4262ba69",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/index.php/Guest",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6854dfc4-32c3-4bd7-9ae0-d624308ded6f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ed39be52-2d20-4d8a-837b-19f2ef3d6334",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col:nth-child(3)",
+      "targets": [
+        ["css=.col:nth-child(3)", "css:finder"],
+        ["xpath=(//div[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='fixToTop']/div[3]", "xpath:idRelative"],
+        ["xpath=//div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b9fc611-debf-49a9-b8f3-fa0427285f7e",
+      "comment": "",
+      "command": "click",
+      "target": "id=user",
+      "targets": [
+        ["id=user", "id"],
+        ["name=username", "name"],
+        ["css=#user", "css:finder"],
+        ["xpath=//input[@id='user']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a5ea396f-bae4-48bc-9d8e-d7e7528ffb67",
+      "comment": "",
+      "command": "type",
+      "target": "id=user",
+      "targets": [
+        ["id=user", "id"],
+        ["name=username", "name"],
+        ["css=#user", "css:finder"],
+        ["xpath=//input[@id='user']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "anastasija123"
+    }, {
+      "id": "7b411592-21a7-455c-8982-ebffedc1b725",
+      "comment": "",
+      "command": "click",
+      "target": "id=pass",
+      "targets": [
+        ["id=pass", "id"],
+        ["name=pass", "name"],
+        ["css=#pass", "css:finder"],
+        ["xpath=//input[@id='pass']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b67cff12-637c-4117-bdf1-a89507db8286",
+      "comment": "",
+      "command": "type",
+      "target": "id=pass",
+      "targets": [
+        ["id=pass", "id"],
+        ["name=pass", "name"],
+        ["css=#pass", "css:finder"],
+        ["xpath=//input[@id='pass']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "sifra12345"
+    }, {
+      "id": "a385a927-9188-4273-9aad-4462e432d5f9",
+      "comment": "",
+      "command": "click",
+      "target": "id=Login",
+      "targets": [
+        ["id=Login", "id"],
+        ["css=#Login", "css:finder"],
+        ["xpath=//input[@id='Login']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "818651b0-3bcc-4303-9654-37e7350b7c7f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col:nth-child(4)",
+      "targets": [
+        ["css=.col:nth-child(4)", "css:finder"],
+        ["xpath=(//div[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='fixToTop']/div[4]", "xpath:idRelative"],
+        ["xpath=//div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "effeb89d-7c31-47c3-969a-674a9511ac6b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown-toggle",
+      "targets": [
+        ["css=.dropdown-toggle", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Angostura bitters')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "06af29db-aa39-400c-a2da-cfe7067e3078",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bs-select-1-2 > .text",
+      "targets": [
+        ["css=#bs-select-1-2 > .text", "css:finder"],
+        ["xpath=//a[@id='bs-select-1-2']/span", "xpath:idRelative"],
+        ["xpath=//li[3]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Campari')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e1a709c-6e30-458a-8571-b6935dbf50cd",
+      "comment": "",
+      "command": "select",
+      "target": "id=select-country",
+      "targets": [],
+      "value": "label=Campari"
+    }, {
+      "id": "d82d288c-0d23-44b4-99b1-790e53010d2e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.filter-option-inner-inner",
+      "targets": [
+        ["css=.filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2625340a-e610-496c-8325-557af72e1c15",
+      "comment": "",
+      "command": "type",
+      "target": "css=.bs-searchbox > .form-control",
+      "targets": [
+        ["css=.bs-searchbox > .form-control", "css:finder"],
+        ["xpath=//input[@type='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "slo"
+    }, {
+      "id": "333a9201-a622-48d8-b6ad-e18b9414b0f2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text",
+      "targets": [
+        ["css=.text", "css:finder"],
+        ["xpath=//a[@id='bs-select-1-12']/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Sloe gin')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fb320bce-c647-45be-855f-d6ee7267b6b1",
+      "comment": "",
+      "command": "select",
+      "target": "id=select-country",
+      "targets": [],
+      "value": "label=Sloe gin"
+    }, {
+      "id": "b8541e45-dc66-4eae-883e-97a13b8054dd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-search",
+      "targets": [
+        ["css=.fa-search", "css:finder"],
+        ["xpath=//div[@id='fixToTop']/div[2]/a/i", "xpath:idRelative"],
+        ["xpath=//div[2]/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d340bbac-0bbc-4274-bdb5-85547aa0337e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4 > p",
+      "targets": [
+        ["css=.col-sm-4 > p", "css:finder"],
+        ["xpath=//div[@id='makeableMissing']/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Sloe gin Negroni')]", "xpath:innerText"]
+      ],
+      "value": "Sloe gin Negroni"
+    }, {
+      "id": "45d169a1-10d2-4d73-b097-cebd980d8498",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "830a4a04-4e91-4332-80d7-1ac474a9c7d5",
+    "name": "TP08_NeuspesnoPretrazivanjeKoktelaKodKorisnika_NemaDovoljnoSastojaka",
+    "commands": [{
+      "id": "923950ed-67c4-4260-8a2f-c29cb08d15d0",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/index.php/Guest",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "09eb95b7-e710-4a86-b296-9c237e942733",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7ab65095-a9d5-4e4a-9a4a-fa0b6740d966",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col:nth-child(3)",
+      "targets": [
+        ["css=.col:nth-child(3)", "css:finder"],
+        ["xpath=(//div[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='fixToTop']/div[3]", "xpath:idRelative"],
+        ["xpath=//div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "59c9ed72-a4c1-4e73-94d1-7c2ce99f5422",
+      "comment": "",
+      "command": "click",
+      "target": "id=user",
+      "targets": [
+        ["id=user", "id"],
+        ["name=username", "name"],
+        ["css=#user", "css:finder"],
+        ["xpath=//input[@id='user']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f0660b53-99f4-4b86-8640-b7a58f69f33a",
+      "comment": "",
+      "command": "type",
+      "target": "id=user",
+      "targets": [
+        ["id=user", "id"],
+        ["name=username", "name"],
+        ["css=#user", "css:finder"],
+        ["xpath=//input[@id='user']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "anastasija123"
+    }, {
+      "id": "8a710499-53ee-4f26-8e68-f7a027793b70",
+      "comment": "",
+      "command": "click",
+      "target": "id=pass",
+      "targets": [
+        ["id=pass", "id"],
+        ["name=pass", "name"],
+        ["css=#pass", "css:finder"],
+        ["xpath=//input[@id='pass']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f4fdf21d-6b2b-42de-82d6-467e52cc7fd2",
+      "comment": "",
+      "command": "type",
+      "target": "id=pass",
+      "targets": [
+        ["id=pass", "id"],
+        ["name=pass", "name"],
+        ["css=#pass", "css:finder"],
+        ["xpath=//input[@id='pass']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "sifra12345"
+    }, {
+      "id": "713c8cc3-f9f8-49e9-b8b4-0ec8b39b261e",
+      "comment": "",
+      "command": "click",
+      "target": "id=Login",
+      "targets": [
+        ["id=Login", "id"],
+        ["css=#Login", "css:finder"],
+        ["xpath=//input[@id='Login']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a9201d4-2d46-4a9a-b470-97c38799af1c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-sm-12",
+      "targets": [
+        ["css=.col-sm-12", "css:finder"],
+        ["xpath=//div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "71a78c20-d886-46ff-875b-182ba27a2911",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-sm-12",
+      "targets": [
+        ["css=.col-sm-12", "css:finder"],
+        ["xpath=//div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4837e85-7f50-435e-adb5-4e95354261eb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-sm-12",
+      "targets": [
+        ["css=.col-sm-12", "css:finder"],
+        ["xpath=//div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f362c661-7627-412f-92a2-7368ef270fca",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col:nth-child(4)",
+      "targets": [
+        ["css=.col:nth-child(4)", "css:finder"],
+        ["xpath=(//div[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='fixToTop']/div[4]", "xpath:idRelative"],
+        ["xpath=//div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5d6c364-fc50-40f7-a4d2-8a7db8c2d6d7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-search",
+      "targets": [
+        ["css=.fa-search", "css:finder"],
+        ["xpath=//div[@id='fixToTop']/div[2]/a/i", "xpath:idRelative"],
+        ["xpath=//div[2]/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "99091ee5-490f-41e9-b374-d78a6ed0bd31",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#makeable > h4",
+      "targets": [
+        ["css=#makeable > h4", "css:finder"],
+        ["xpath=//div[@id='makeable']/h4", "xpath:idRelative"],
+        ["xpath=//h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'No results to show.')]", "xpath:innerText"]
+      ],
+      "value": "No results to show."
+    }, {
+      "id": "a4aabdc2-27b2-4cb0-a041-909e49a6953b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#makeableMissing > h4",
+      "targets": [
+        ["css=#makeableMissing > h4", "css:finder"],
+        ["xpath=//div[@id='makeableMissing']/h4", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/h4", "xpath:position"]
+      ],
+      "value": "No results to show."
+    }, {
+      "id": "25598c71-c03f-478e-aa88-98a41da577a0",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "1c7f64e7-566d-4591-a93e-e61243d2dafb",
+    "name": "TP09_SortiranjeKoktelaKojiSeMoguNapraviti",
+    "commands": [{
+      "id": "77cabd92-3e5a-4bf0-8737-25a0c080a79e",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/index.php/Guest",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7136c9d2-a5d3-478d-b579-7ba61f7e631a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b20e3b71-2d35-4069-97f0-edfb88665b19",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col:nth-child(3)",
+      "targets": [
+        ["css=.col:nth-child(3)", "css:finder"],
+        ["xpath=(//div[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='fixToTop']/div[3]", "xpath:idRelative"],
+        ["xpath=//div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8f5010af-0786-4b72-8da5-2f51838868b9",
+      "comment": "",
+      "command": "click",
+      "target": "id=user",
+      "targets": [
+        ["id=user", "id"],
+        ["name=username", "name"],
+        ["css=#user", "css:finder"],
+        ["xpath=//input[@id='user']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "999ed46f-c1b3-48b6-9622-8059bf358430",
+      "comment": "",
+      "command": "type",
+      "target": "id=user",
+      "targets": [
+        ["id=user", "id"],
+        ["name=username", "name"],
+        ["css=#user", "css:finder"],
+        ["xpath=//input[@id='user']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "anastasija123"
+    }, {
+      "id": "678fbb1b-d178-43dc-a02e-41a8249ccd3c",
+      "comment": "",
+      "command": "click",
+      "target": "id=pass",
+      "targets": [
+        ["id=pass", "id"],
+        ["name=pass", "name"],
+        ["css=#pass", "css:finder"],
+        ["xpath=//input[@id='pass']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a7ec6b3-e97d-4798-8fd3-b24e46780b3e",
+      "comment": "",
+      "command": "type",
+      "target": "id=pass",
+      "targets": [
+        ["id=pass", "id"],
+        ["name=pass", "name"],
+        ["css=#pass", "css:finder"],
+        ["xpath=//input[@id='pass']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "sifra12345"
+    }, {
+      "id": "386df6c0-efe1-4e46-80d9-122ca590a67d",
+      "comment": "",
+      "command": "click",
+      "target": "id=Login",
+      "targets": [
+        ["id=Login", "id"],
+        ["css=#Login", "css:finder"],
+        ["xpath=//input[@id='Login']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "05bfcc2e-76ec-4799-b36b-777f8dc97393",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col:nth-child(4)",
+      "targets": [
+        ["css=.col:nth-child(4)", "css:finder"],
+        ["xpath=(//div[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='fixToTop']/div[4]", "xpath:idRelative"],
+        ["xpath=//div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "17bf8d8d-4008-40fc-9e93-996e3886cd87",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown-toggle",
+      "targets": [
+        ["css=.dropdown-toggle", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Angostura bitters')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7dbada62-d140-43d0-bcbe-fa51c56332ab",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bs-select-1-0 > .text",
+      "targets": [
+        ["css=#bs-select-1-0 > .text", "css:finder"],
+        ["xpath=//a[@id='bs-select-1-0']/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Angostura bitters')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "857cc3e0-1747-443e-a9ec-2ce7ec5a244b",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.filter-option-inner-inner",
+      "targets": [
+        ["css=.filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a7a1b3a-0df2-445c-b75e-4fdca566ce41",
+      "comment": "",
+      "command": "click",
+      "target": "css=.filter-option-inner-inner",
+      "targets": [
+        ["css=.filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4a29638-d7f9-4297-9a4a-5f0f5d12cdff",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.filter-option-inner-inner",
+      "targets": [
+        ["css=.filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "821d9133-5736-487e-991f-bcb1b9df89b3",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bs-select-1-1 > .text",
+      "targets": [
+        ["css=#bs-select-1-1 > .text", "css:finder"],
+        ["xpath=//a[@id='bs-select-1-1']/span", "xpath:idRelative"],
+        ["xpath=//li[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Bacardi Superior rum')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "da8249fa-e914-4b64-a7e3-41e1fcdf11cd",
+      "comment": "",
+      "command": "select",
+      "target": "id=select-country",
+      "targets": [],
+      "value": "label=Bacardi Superior rum"
+    }, {
+      "id": "0253aa46-6739-41c4-ae1e-4d7ff6acccc2",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.dropdown-toggle",
+      "targets": [
+        ["css=.dropdown-toggle", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Bacardi Superior rum')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "189bd835-bc45-489f-857f-349fb310eded",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.dropdown-toggle",
+      "targets": [
+        ["css=.dropdown-toggle", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Bacardi Superior rum')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f2f71bfb-4d6c-4aed-82e4-bbc99ed2a5db",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown-toggle",
+      "targets": [
+        ["css=.dropdown-toggle", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Bacardi Superior rum')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b9affcb-0acc-4238-819e-eece03cce6ed",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bs-select-1-2 > .text",
+      "targets": [
+        ["css=#bs-select-1-2 > .text", "css:finder"],
+        ["xpath=//a[@id='bs-select-1-2']/span", "xpath:idRelative"],
+        ["xpath=//li[3]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Campari')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cec0d2e4-1659-4a85-9834-1f8c16a815b7",
+      "comment": "",
+      "command": "select",
+      "target": "id=select-country",
+      "targets": [],
+      "value": "label=Campari"
+    }, {
+      "id": "864016d9-d995-497a-b938-1acd3558127d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.filter-option-inner-inner",
+      "targets": [
+        ["css=.filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "78b696d2-7e02-49b9-a212-37058567e872",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bs-select-1-3 > .text",
+      "targets": [
+        ["css=#bs-select-1-3 > .text", "css:finder"],
+        ["xpath=//a[@id='bs-select-1-3']/span", "xpath:idRelative"],
+        ["xpath=//li[4]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Cranberry juice')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3086741-b2a1-49ab-8a3c-9592d02d4ee8",
+      "comment": "",
+      "command": "select",
+      "target": "id=select-country",
+      "targets": [],
+      "value": "label=Cranberry juice"
+    }, {
+      "id": "ae8944b4-5dff-4366-bce3-30018437918c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.filter-option-inner-inner",
+      "targets": [
+        ["css=.filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "729aca78-b232-44fd-903a-5ae74fb74b90",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bs-select-1-4 > .text",
+      "targets": [
+        ["css=#bs-select-1-4 > .text", "css:finder"],
+        ["xpath=//a[@id='bs-select-1-4']/span", "xpath:idRelative"],
+        ["xpath=//li[5]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Extra-dry vermouth')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f0094644-46de-4975-b00c-f39b591c9598",
+      "comment": "",
+      "command": "select",
+      "target": "id=select-country",
+      "targets": [],
+      "value": "label=Extra-dry vermouth"
+    }, {
+      "id": "0d341d36-b330-4729-9031-22dbb42ca160",
+      "comment": "",
+      "command": "click",
+      "target": "css=.filter-option-inner-inner",
+      "targets": [
+        ["css=.filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "72434a73-ee36-4cac-9220-010638213e6e",
+      "comment": "",
+      "command": "click",
+      "target": "id=bs-select-1-5",
+      "targets": [
+        ["id=bs-select-1-5", "id"],
+        ["linkText=Ice", "linkText"],
+        ["css=#bs-select-1-5", "css:finder"],
+        ["xpath=//a[@id='bs-select-1-5']", "xpath:attributes"],
+        ["xpath=//div[@id='bs-select-1']/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Ice')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c3e2099b-704d-4b83-98fa-6871872ebcbd",
+      "comment": "",
+      "command": "select",
+      "target": "id=select-country",
+      "targets": [],
+      "value": "label=Ice"
+    }, {
+      "id": "2f23f962-b7a6-492d-b1a4-ba8faef1945d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.filter-option-inner-inner",
+      "targets": [
+        ["css=.filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "45097f86-e905-4189-b2c8-0ca90615faf6",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bs-select-1-6 > .text",
+      "targets": [
+        ["css=#bs-select-1-6 > .text", "css:finder"],
+        ["xpath=//a[@id='bs-select-1-6']/span", "xpath:idRelative"],
+        ["xpath=//li[7]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Lemon juice')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f3ebdc4c-a82d-49d6-86c4-d2d8931f25af",
+      "comment": "",
+      "command": "select",
+      "target": "id=select-country",
+      "targets": [],
+      "value": "label=Lemon juice"
+    }, {
+      "id": "fe210335-170d-4bfb-a083-fc9799a9c3c7",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.filter-option-inner-inner",
+      "targets": [
+        ["css=.filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "caf4b297-4949-4c10-962c-ccc4ef7ac7f1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.filter-option-inner-inner",
+      "targets": [
+        ["css=.filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "31430447-bc4b-4f77-bb4a-93c4df10c307",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.filter-option-inner-inner",
+      "targets": [
+        ["css=.filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "423a4966-9cda-44f6-9be3-4f72a34fa8e0",
+      "comment": "",
+      "command": "click",
+      "target": "id=bs-select-1-7",
+      "targets": [
+        ["id=bs-select-1-7", "id"],
+        ["linkText=Lemons", "linkText"],
+        ["css=#bs-select-1-7", "css:finder"],
+        ["xpath=//a[@id='bs-select-1-7']", "xpath:attributes"],
+        ["xpath=//div[@id='bs-select-1']/ul/li[8]/a", "xpath:idRelative"],
+        ["xpath=//li[8]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Lemons')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6fc5eeba-67f4-477f-b924-3ea607db94d5",
+      "comment": "",
+      "command": "select",
+      "target": "id=select-country",
+      "targets": [],
+      "value": "label=Lemons"
+    }, {
+      "id": "86ae7f9a-aff1-45d9-b8fa-bd564e404635",
+      "comment": "",
+      "command": "click",
+      "target": "css=.filter-option-inner-inner",
+      "targets": [
+        ["css=.filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f26c53f1-9955-4919-99c7-bedbebaead05",
+      "comment": "",
+      "command": "click",
+      "target": "id=bs-select-1-8",
+      "targets": [
+        ["id=bs-select-1-8", "id"],
+        ["linkText=Lime juice", "linkText"],
+        ["css=#bs-select-1-8", "css:finder"],
+        ["xpath=//a[@id='bs-select-1-8']", "xpath:attributes"],
+        ["xpath=//div[@id='bs-select-1']/ul/li[9]/a", "xpath:idRelative"],
+        ["xpath=//li[9]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Lime juice')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "44405813-ca54-45ae-b270-64400cbb2838",
+      "comment": "",
+      "command": "select",
+      "target": "id=select-country",
+      "targets": [],
+      "value": "label=Lime juice"
+    }, {
+      "id": "c679dc5a-6048-4c9a-994d-a4d20a75fb81",
+      "comment": "",
+      "command": "click",
+      "target": "css=.filter-option-inner-inner",
+      "targets": [
+        ["css=.filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b66518da-af27-42eb-9d0a-6c6277854017",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bs-select-1-9 > .text",
+      "targets": [
+        ["css=#bs-select-1-9 > .text", "css:finder"],
+        ["xpath=//a[@id='bs-select-1-9']/span", "xpath:idRelative"],
+        ["xpath=//li[10]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Maple syrup')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2387a62c-11bc-440e-b894-af150e262bf3",
+      "comment": "",
+      "command": "select",
+      "target": "id=select-country",
+      "targets": [],
+      "value": "label=Maple syrup"
+    }, {
+      "id": "509ad385-312a-4102-b91f-9b687693981a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.filter-option-inner-inner",
+      "targets": [
+        ["css=.filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e38abf87-8bd9-4b65-8b36-fe936ba746ed",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bs-select-1-10 > .text",
+      "targets": [
+        ["css=#bs-select-1-10 > .text", "css:finder"],
+        ["xpath=//a[@id='bs-select-1-10']/span", "xpath:idRelative"],
+        ["xpath=//li[11]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Mint leaves')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "57c6bd9b-6eba-44ed-84be-9eab9b3b74b3",
+      "comment": "",
+      "command": "select",
+      "target": "id=select-country",
+      "targets": [],
+      "value": "label=Mint leaves"
+    }, {
+      "id": "f9e3d1be-c877-420f-bcc7-7e2363eac95e",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.filter-option-inner-inner",
+      "targets": [
+        ["css=.filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "106c0fa1-2755-4c22-9193-4ce9169a1215",
+      "comment": "",
+      "command": "click",
+      "target": "css=.filter-option-inner-inner",
+      "targets": [
+        ["css=.filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "82b38d1b-33ff-4259-98f5-5f3078d5c4e9",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.filter-option-inner-inner",
+      "targets": [
+        ["css=.filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ecfaa42-d029-4ab3-9190-a22b8dcf5b81",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bs-select-1-11 > .text",
+      "targets": [
+        ["css=#bs-select-1-11 > .text", "css:finder"],
+        ["xpath=//a[@id='bs-select-1-11']/span", "xpath:idRelative"],
+        ["xpath=//li[12]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Orange')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3ed4ad7-c2e5-4a5f-a6a0-780844f60bcb",
+      "comment": "",
+      "command": "select",
+      "target": "id=select-country",
+      "targets": [],
+      "value": "label=Orange"
+    }, {
+      "id": "52c4354f-20ac-44be-8d85-5ff98de67baa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.filter-option-inner-inner",
+      "targets": [
+        ["css=.filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8eda86c1-b1e9-4ab2-8f33-bdb1075a8270",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bs-select-1-12 > .text",
+      "targets": [
+        ["css=#bs-select-1-12 > .text", "css:finder"],
+        ["xpath=//a[@id='bs-select-1-12']/span", "xpath:idRelative"],
+        ["xpath=//li[13]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Sloe gin')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c76f71d1-0a4c-4d28-a520-ae70cac1d289",
+      "comment": "",
+      "command": "select",
+      "target": "id=select-country",
+      "targets": [],
+      "value": "label=Sloe gin"
+    }, {
+      "id": "d9988228-fc13-4a4c-a49d-851b388269f6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.filter-option-inner-inner",
+      "targets": [
+        ["css=.filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a323f59-1e53-4176-9534-136e1ee9067d",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bs-select-1-13 > .text",
+      "targets": [
+        ["css=#bs-select-1-13 > .text", "css:finder"],
+        ["xpath=//a[@id='bs-select-1-13']/span", "xpath:idRelative"],
+        ["xpath=//li[14]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Soda water')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "06ad2108-67a4-4317-98cd-d7c7d4cb86e9",
+      "comment": "",
+      "command": "select",
+      "target": "id=select-country",
+      "targets": [],
+      "value": "label=Soda water"
+    }, {
+      "id": "c2744bb3-65bb-47b0-ad78-60a57a4426ba",
+      "comment": "",
+      "command": "click",
+      "target": "css=.filter-option-inner-inner",
+      "targets": [
+        ["css=.filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "73ea9c3b-da71-4b0a-bf96-029216f7eb7d",
+      "comment": "",
+      "command": "click",
+      "target": "id=bs-select-1-14",
+      "targets": [
+        ["id=bs-select-1-14", "id"],
+        ["linkText=Sugar", "linkText"],
+        ["css=#bs-select-1-14", "css:finder"],
+        ["xpath=//a[@id='bs-select-1-14']", "xpath:attributes"],
+        ["xpath=//div[@id='bs-select-1']/ul/li[15]/a", "xpath:idRelative"],
+        ["xpath=//li[15]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sugar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "52ff4109-ce69-401c-a38b-93c78d3b4105",
+      "comment": "",
+      "command": "select",
+      "target": "id=select-country",
+      "targets": [],
+      "value": "label=Sugar"
+    }, {
+      "id": "23febb24-5b05-4578-b13f-5df90dff778a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.filter-option-inner-inner",
+      "targets": [
+        ["css=.filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "286b93ae-60d3-4e14-8463-be0c7deaede6",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bs-select-1-15 > .text",
+      "targets": [
+        ["css=#bs-select-1-15 > .text", "css:finder"],
+        ["xpath=//a[@id='bs-select-1-15']/span", "xpath:idRelative"],
+        ["xpath=//li[16]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Tequila')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ca9b873-18a6-411f-9f0f-376954ff41bf",
+      "comment": "",
+      "command": "select",
+      "target": "id=select-country",
+      "targets": [],
+      "value": "label=Tequila"
+    }, {
+      "id": "f75b17e6-4b92-4b74-86bf-9b855d2eb924",
+      "comment": "",
+      "command": "click",
+      "target": "css=.filter-option-inner-inner",
+      "targets": [
+        ["css=.filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8908d777-458d-4697-98d3-a6ca06e7bcf0",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bs-select-1-16 > .text",
+      "targets": [
+        ["css=#bs-select-1-16 > .text", "css:finder"],
+        ["xpath=//a[@id='bs-select-1-16']/span", "xpath:idRelative"],
+        ["xpath=//li[17]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Thyme')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d9be9e5-24b3-418b-92c0-71963ef89777",
+      "comment": "",
+      "command": "select",
+      "target": "id=select-country",
+      "targets": [],
+      "value": "label=Thyme"
+    }, {
+      "id": "0b389fc8-f1c8-473b-9832-07ac2befbfdc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.filter-option-inner-inner",
+      "targets": [
+        ["css=.filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4bdc7ac-5d08-4d27-8ae4-251e7ba763af",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bs-select-1-17 > .text",
+      "targets": [
+        ["css=#bs-select-1-17 > .text", "css:finder"],
+        ["xpath=//a[@id='bs-select-1-17']/span", "xpath:idRelative"],
+        ["xpath=//li[18]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Vodka')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b490e76-e398-436b-ad16-b687a42b708d",
+      "comment": "",
+      "command": "select",
+      "target": "id=select-country",
+      "targets": [],
+      "value": "label=Vodka"
+    }, {
+      "id": "60124fc1-95ee-4593-9499-9ebb97ed8e6c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col:nth-child(2)",
+      "targets": [
+        ["css=.col:nth-child(2)", "css:finder"],
+        ["xpath=(//div[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='fixToTop']/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a35a6efb-eaa8-4123-b089-baee6f44b9e2",
+      "comment": "",
+      "command": "click",
+      "target": "id=dropdownMenuButton",
+      "targets": [
+        ["id=dropdownMenuButton", "id"],
+        ["css=#dropdownMenuButton", "css:finder"],
+        ["xpath=//button[@id='dropdownMenuButton']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b88ff35a-c5f7-48f0-8927-0f18f8b7b0d0",
+      "comment": "",
+      "command": "click",
+      "target": "id=sortRating",
+      "targets": [
+        ["id=sortRating", "id"],
+        ["linkText=Rating", "linkText"],
+        ["css=#sortRating", "css:finder"],
+        ["xpath=//a[contains(text(),'Rating')]", "xpath:link"],
+        ["xpath=//a[@id='sortRating']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Rating')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "74fb922c-e171-49be-b6cc-490117e9258c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(1) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(1) > p", "css:finder"],
+        ["xpath=//div[@id='makeable']/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Mojito')]", "xpath:innerText"]
+      ],
+      "value": "Mojito"
+    }, {
+      "id": "254ddb18-7c95-47fc-aa05-ee128b3d461c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-sm-4:nth-child(2) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(2) > p", "css:finder"],
+        ["xpath=//div[@id='makeable']/div[2]/p", "xpath:idRelative"],
+        ["xpath=//div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Blush martini')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9fb403d3-0b82-472d-8616-0f5d52966843",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(2) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(2) > p", "css:finder"],
+        ["xpath=//div[@id='makeable']/div[2]/p", "xpath:idRelative"],
+        ["xpath=//div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Blush martini')]", "xpath:innerText"]
+      ],
+      "value": "Blush martini"
+    }, {
+      "id": "922ab4e7-b0bb-4f74-ab80-30955bab0383",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-sm-4:nth-child(3) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(3) > p", "css:finder"],
+        ["xpath=//div[@id='makeable']/div[3]/p", "xpath:idRelative"],
+        ["xpath=//div[3]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Sloe gin Negroni')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bfa117c6-95d4-448f-8895-06f0fb612a2b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(3) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(3) > p", "css:finder"],
+        ["xpath=//div[@id='makeable']/div[3]/p", "xpath:idRelative"],
+        ["xpath=//div[3]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Sloe gin Negroni')]", "xpath:innerText"]
+      ],
+      "value": "Sloe gin Negroni"
+    }, {
+      "id": "24a65474-baee-4ed3-b612-76ee3c89facc",
+      "comment": "",
+      "command": "click",
+      "target": "id=descending",
+      "targets": [
+        ["id=descending", "id"],
+        ["css=#descending", "css:finder"],
+        ["xpath=//input[@id='descending']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "efa4f203-a10a-4da5-9d1e-b8fbb209ae15",
+      "comment": "",
+      "command": "click",
+      "target": "id=dropdownMenuButton",
+      "targets": [
+        ["id=dropdownMenuButton", "id"],
+        ["css=#dropdownMenuButton", "css:finder"],
+        ["xpath=//button[@id='dropdownMenuButton']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d47f905a-9853-4270-bf45-a175ced3386b",
+      "comment": "",
+      "command": "click",
+      "target": "id=sortRating",
+      "targets": [
+        ["id=sortRating", "id"],
+        ["linkText=Rating", "linkText"],
+        ["css=#sortRating", "css:finder"],
+        ["xpath=//a[contains(text(),'Rating')]", "xpath:link"],
+        ["xpath=//a[@id='sortRating']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Rating')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b55b8eba-2f96-457d-8a71-81c87e7e6534",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(1) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(1) > p", "css:finder"],
+        ["xpath=//div[@id='makeable']/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Sloe gin Negroni')]", "xpath:innerText"]
+      ],
+      "value": "Sloe gin Negroni"
+    }, {
+      "id": "67cddd7f-df95-430e-ba01-08f658c964fe",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(2) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(2) > p", "css:finder"],
+        ["xpath=//div[@id='makeable']/div[2]/p", "xpath:idRelative"],
+        ["xpath=//div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Blush martini')]", "xpath:innerText"]
+      ],
+      "value": "Blush martini"
+    }, {
+      "id": "ab783df8-2aee-4f6e-bd57-2ba40aa7bd19",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(3) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(3) > p", "css:finder"],
+        ["xpath=//div[@id='makeable']/div[3]/p", "xpath:idRelative"],
+        ["xpath=//div[3]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Mojito')]", "xpath:innerText"]
+      ],
+      "value": "Mojito"
+    }, {
+      "id": "3cdfb131-e04b-47ac-94cd-19c5e239fa03",
+      "comment": "",
+      "command": "click",
+      "target": "id=ascending",
+      "targets": [
+        ["id=ascending", "id"],
+        ["name=order", "name"],
+        ["css=#ascending", "css:finder"],
+        ["xpath=//input[@id='ascending']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3d19b8f-69df-424b-930b-b63e79e47896",
+      "comment": "",
+      "command": "click",
+      "target": "id=dropdownMenuButton",
+      "targets": [
+        ["id=dropdownMenuButton", "id"],
+        ["css=#dropdownMenuButton", "css:finder"],
+        ["xpath=//button[@id='dropdownMenuButton']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "15aa2daf-095a-4457-8b94-de0d2c8d0fac",
+      "comment": "",
+      "command": "click",
+      "target": "id=sortAlpha",
+      "targets": [
+        ["id=sortAlpha", "id"],
+        ["linkText=Alphabetical", "linkText"],
+        ["css=#sortAlpha", "css:finder"],
+        ["xpath=//a[contains(text(),'Alphabetical')]", "xpath:link"],
+        ["xpath=//a[@id='sortAlpha']", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Alphabetical')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce4c302a-bd46-4fa3-b9d1-d209855789a9",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(1) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(1) > p", "css:finder"],
+        ["xpath=//div[@id='makeable']/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Blush martini')]", "xpath:innerText"]
+      ],
+      "value": "Blush martini"
+    }, {
+      "id": "81f83302-a69b-48ad-9daf-c34c759dc93f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(2) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(2) > p", "css:finder"],
+        ["xpath=//div[@id='makeable']/div[2]/p", "xpath:idRelative"],
+        ["xpath=//div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Mojito')]", "xpath:innerText"]
+      ],
+      "value": "Mojito"
+    }, {
+      "id": "3bed7a5b-be78-4f2d-9e6a-9db6f1854d4b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(3) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(3) > p", "css:finder"],
+        ["xpath=//div[@id='makeable']/div[3]/p", "xpath:idRelative"],
+        ["xpath=//div[3]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Sloe gin Negroni')]", "xpath:innerText"]
+      ],
+      "value": "Sloe gin Negroni"
+    }, {
+      "id": "588ae5cd-e597-452c-bc7a-92d140c3e64b",
+      "comment": "",
+      "command": "click",
+      "target": "id=descending",
+      "targets": [
+        ["id=descending", "id"],
+        ["css=#descending", "css:finder"],
+        ["xpath=//input[@id='descending']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d81a74e8-6f34-4ce2-b1b2-f73c52eee8f6",
+      "comment": "",
+      "command": "click",
+      "target": "id=dropdownMenuButton",
+      "targets": [
+        ["id=dropdownMenuButton", "id"],
+        ["css=#dropdownMenuButton", "css:finder"],
+        ["xpath=//button[@id='dropdownMenuButton']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "33918fed-8b23-4552-965a-0a73960fc26b",
+      "comment": "",
+      "command": "click",
+      "target": "id=sortAlpha",
+      "targets": [
+        ["id=sortAlpha", "id"],
+        ["linkText=Alphabetical", "linkText"],
+        ["css=#sortAlpha", "css:finder"],
+        ["xpath=//a[contains(text(),'Alphabetical')]", "xpath:link"],
+        ["xpath=//a[@id='sortAlpha']", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Alphabetical')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c137643-d820-4a6f-a63c-be11ae3d0b31",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(1) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(1) > p", "css:finder"],
+        ["xpath=//div[@id='makeable']/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Sloe gin Negroni')]", "xpath:innerText"]
+      ],
+      "value": "Sloe gin Negroni"
+    }, {
+      "id": "90d67548-1383-4402-a3bf-c65011ac88a3",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(2) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(2) > p", "css:finder"],
+        ["xpath=//div[@id='makeable']/div[2]/p", "xpath:idRelative"],
+        ["xpath=//div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Mojito')]", "xpath:innerText"]
+      ],
+      "value": "Mojito"
+    }, {
+      "id": "0f6e2494-b207-42b5-b2b0-649da0e0e640",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(3) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(3) > p", "css:finder"],
+        ["xpath=//div[@id='makeable']/div[3]/p", "xpath:idRelative"],
+        ["xpath=//div[3]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Blush martini')]", "xpath:innerText"]
+      ],
+      "value": "Blush martini"
+    }, {
+      "id": "bfa17891-1409-49e1-b096-7bcfb709012b",
+      "comment": "",
+      "command": "click",
+      "target": "id=ascending",
+      "targets": [
+        ["id=ascending", "id"],
+        ["name=order", "name"],
+        ["css=#ascending", "css:finder"],
+        ["xpath=//input[@id='ascending']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3cde8f2b-7103-4877-8176-1798ed84d230",
+      "comment": "",
+      "command": "click",
+      "target": "id=dropdownMenuButton",
+      "targets": [
+        ["id=dropdownMenuButton", "id"],
+        ["css=#dropdownMenuButton", "css:finder"],
+        ["xpath=//button[@id='dropdownMenuButton']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "df2ecfd1-8340-40a0-8bd8-1c5d8d590d70",
+      "comment": "",
+      "command": "click",
+      "target": "id=sortNum",
+      "targets": [
+        ["id=sortNum", "id"],
+        ["linkText=Number of ingredients", "linkText"],
+        ["css=#sortNum", "css:finder"],
+        ["xpath=//a[contains(text(),'Number of ingredients')]", "xpath:link"],
+        ["xpath=//a[@id='sortNum']", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '#')])[3]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Number of ingredients')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6154306c-0307-4e68-8a00-35df441e467e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-sm-4:nth-child(1) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(1) > p", "css:finder"],
+        ["xpath=//div[@id='makeable']/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Sloe gin Negroni')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a06d9e5-a7c8-4006-b669-5ed8d0e21dfc",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(1) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(1) > p", "css:finder"],
+        ["xpath=//div[@id='makeable']/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Sloe gin Negroni')]", "xpath:innerText"]
+      ],
+      "value": "Sloe gin Negroni"
+    }, {
+      "id": "bc529a95-4858-404b-9174-b7f6b8f9e31d",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(2) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(2) > p", "css:finder"],
+        ["xpath=//div[@id='makeable']/div[2]/p", "xpath:idRelative"],
+        ["xpath=//div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Mojito')]", "xpath:innerText"]
+      ],
+      "value": "Mojito"
+    }, {
+      "id": "5964cf4c-4c41-4834-8bb3-de32af3ae2d5",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(3) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(3) > p", "css:finder"],
+        ["xpath=//div[@id='makeable']/div[3]/p", "xpath:idRelative"],
+        ["xpath=//div[3]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Blush martini')]", "xpath:innerText"]
+      ],
+      "value": "Blush martini"
+    }, {
+      "id": "3e9bb555-852f-4e5e-a1d2-c5faf19596b5",
+      "comment": "",
+      "command": "click",
+      "target": "id=descending",
+      "targets": [
+        ["id=descending", "id"],
+        ["css=#descending", "css:finder"],
+        ["xpath=//input[@id='descending']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "40affdf3-0eac-421b-a78f-5cd6e74330db",
+      "comment": "",
+      "command": "click",
+      "target": "id=dropdownMenuButton",
+      "targets": [
+        ["id=dropdownMenuButton", "id"],
+        ["css=#dropdownMenuButton", "css:finder"],
+        ["xpath=//button[@id='dropdownMenuButton']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "11582f08-5632-4e9e-9386-626d7e8e5aeb",
+      "comment": "",
+      "command": "click",
+      "target": "id=sortNum",
+      "targets": [
+        ["id=sortNum", "id"],
+        ["linkText=Number of ingredients", "linkText"],
+        ["css=#sortNum", "css:finder"],
+        ["xpath=//a[contains(text(),'Number of ingredients')]", "xpath:link"],
+        ["xpath=//a[@id='sortNum']", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '#')])[3]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Number of ingredients')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c39a3cd-4723-46b7-8706-2601110cb9e3",
+      "comment": "",
+      "command": "click",
+      "target": "id=dropdownMenuButton",
+      "targets": [
+        ["id=dropdownMenuButton", "id"],
+        ["css=#dropdownMenuButton", "css:finder"],
+        ["xpath=//button[@id='dropdownMenuButton']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0b593268-0acb-4104-a316-eb3e4a692ddb",
+      "comment": "",
+      "command": "click",
+      "target": "id=sortPrepTime",
+      "targets": [
+        ["id=sortPrepTime", "id"],
+        ["linkText=Prep time", "linkText"],
+        ["css=#sortPrepTime", "css:finder"],
+        ["xpath=//a[contains(text(),'Prep time')]", "xpath:link"],
+        ["xpath=//a[@id='sortPrepTime']", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '#')])[4]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Prep time')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "edf5dcf3-f2c7-47b8-b67e-8ab2f5b09e63",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(1) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(1) > p", "css:finder"],
+        ["xpath=//div[@id='makeable']/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Sloe gin Negroni')]", "xpath:innerText"]
+      ],
+      "value": "Sloe gin Negroni"
+    }, {
+      "id": "fe1f8003-6f4b-4314-a4fa-dab677088c94",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(2) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(2) > p", "css:finder"],
+        ["xpath=//div[@id='makeable']/div[2]/p", "xpath:idRelative"],
+        ["xpath=//div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Mojito')]", "xpath:innerText"]
+      ],
+      "value": "Mojito"
+    }, {
+      "id": "65b32df1-8f94-4d82-8a6a-9922b3e1b5ca",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(3) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(3) > p", "css:finder"],
+        ["xpath=//div[@id='makeable']/div[3]/p", "xpath:idRelative"],
+        ["xpath=//div[3]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Blush martini')]", "xpath:innerText"]
+      ],
+      "value": "Blush martini"
+    }, {
+      "id": "f1a54d40-ff94-4d90-9756-4d6d069d58b9",
+      "comment": "",
+      "command": "click",
+      "target": "id=ascending",
+      "targets": [
+        ["id=ascending", "id"],
+        ["name=order", "name"],
+        ["css=#ascending", "css:finder"],
+        ["xpath=//input[@id='ascending']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c71ceb0c-0e75-45b0-ab70-16e2047685c4",
+      "comment": "",
+      "command": "click",
+      "target": "id=dropdownMenuButton",
+      "targets": [
+        ["id=dropdownMenuButton", "id"],
+        ["css=#dropdownMenuButton", "css:finder"],
+        ["xpath=//button[@id='dropdownMenuButton']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "985e0b8f-194d-4867-8fa5-eb2ac57bd240",
+      "comment": "",
+      "command": "click",
+      "target": "id=sortPrepTime",
+      "targets": [
+        ["id=sortPrepTime", "id"],
+        ["linkText=Prep time", "linkText"],
+        ["css=#sortPrepTime", "css:finder"],
+        ["xpath=//a[contains(text(),'Prep time')]", "xpath:link"],
+        ["xpath=//a[@id='sortPrepTime']", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '#')])[4]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Prep time')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d436ad0d-a37d-4820-a8fb-1709ac7bc331",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(1) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(1) > p", "css:finder"],
+        ["xpath=//div[@id='makeable']/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Mojito')]", "xpath:innerText"]
+      ],
+      "value": "Mojito"
+    }, {
+      "id": "7137d5ca-22eb-48ff-b4a7-962a828a0215",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(2) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(2) > p", "css:finder"],
+        ["xpath=//div[@id='makeable']/div[2]/p", "xpath:idRelative"],
+        ["xpath=//div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Blush martini')]", "xpath:innerText"]
+      ],
+      "value": "Blush martini"
+    }, {
+      "id": "69c36ffe-048b-42bb-9de1-9a6d9397f8c6",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(3) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(3) > p", "css:finder"],
+        ["xpath=//div[@id='makeable']/div[3]/p", "xpath:idRelative"],
+        ["xpath=//div[3]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Sloe gin Negroni')]", "xpath:innerText"]
+      ],
+      "value": "Sloe gin Negroni"
+    }, {
+      "id": "e00ecf2a-f504-4856-a898-bf275472333d",
+      "comment": "",
+      "command": "click",
+      "target": "id=dropdownMenuButton",
+      "targets": [
+        ["id=dropdownMenuButton", "id"],
+        ["css=#dropdownMenuButton", "css:finder"],
+        ["xpath=//button[@id='dropdownMenuButton']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aee812c9-300f-4dba-b445-ec5c2ab1e9db",
+      "comment": "",
+      "command": "click",
+      "target": "id=sortPrepTime",
+      "targets": [
+        ["id=sortPrepTime", "id"],
+        ["linkText=Prep time", "linkText"],
+        ["css=#sortPrepTime", "css:finder"],
+        ["xpath=//a[contains(text(),'Prep time')]", "xpath:link"],
+        ["xpath=//a[@id='sortPrepTime']", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '#')])[4]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Prep time')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fea02529-2bae-459f-ab6d-d0dcc11b59c5",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(1) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(1) > p", "css:finder"],
+        ["xpath=//div[@id='makeable']/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Mojito')]", "xpath:innerText"]
+      ],
+      "value": "Mojito"
+    }, {
+      "id": "0b28f777-f809-45e4-91c5-c4e440b72b84",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(2) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(2) > p", "css:finder"],
+        ["xpath=//div[@id='makeable']/div[2]/p", "xpath:idRelative"],
+        ["xpath=//div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Blush martini')]", "xpath:innerText"]
+      ],
+      "value": "Blush martini"
+    }, {
+      "id": "4e0b4f9f-c336-4df6-8bac-648be1dc17de",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(3) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(3) > p", "css:finder"],
+        ["xpath=//div[@id='makeable']/div[3]/p", "xpath:idRelative"],
+        ["xpath=//div[3]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Sloe gin Negroni')]", "xpath:innerText"]
+      ],
+      "value": "Sloe gin Negroni"
+    }, {
+      "id": "a5da0c04-8c60-45b9-b1b3-de994d44554e",
+      "comment": "",
+      "command": "click",
+      "target": "id=descending",
+      "targets": [
+        ["id=descending", "id"],
+        ["css=#descending", "css:finder"],
+        ["xpath=//input[@id='descending']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "476d8cd7-2d43-4c3c-9adf-bf4a9ef2546f",
+      "comment": "",
+      "command": "click",
+      "target": "id=dropdownMenuButton",
+      "targets": [
+        ["id=dropdownMenuButton", "id"],
+        ["css=#dropdownMenuButton", "css:finder"],
+        ["xpath=//button[@id='dropdownMenuButton']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e45c6b26-cea9-4776-8abe-3ea4bf1f019a",
+      "comment": "",
+      "command": "click",
+      "target": "id=sortPrepTime",
+      "targets": [
+        ["id=sortPrepTime", "id"],
+        ["linkText=Prep time", "linkText"],
+        ["css=#sortPrepTime", "css:finder"],
+        ["xpath=//a[contains(text(),'Prep time')]", "xpath:link"],
+        ["xpath=//a[@id='sortPrepTime']", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '#')])[4]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Prep time')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "468432c4-a7dd-4010-a331-8d13c81e868c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(1) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(1) > p", "css:finder"],
+        ["xpath=//div[@id='makeable']/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Sloe gin Negroni')]", "xpath:innerText"]
+      ],
+      "value": "Sloe gin Negroni"
+    }, {
+      "id": "24b04280-2013-4030-8b6c-d15bdf32bb63",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(2) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(2) > p", "css:finder"],
+        ["xpath=//div[@id='makeable']/div[2]/p", "xpath:idRelative"],
+        ["xpath=//div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Blush martini')]", "xpath:innerText"]
+      ],
+      "value": "Blush martini"
+    }, {
+      "id": "39b71d0d-1fc6-4f5f-8de0-49f2039b7211",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(3) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(3) > p", "css:finder"],
+        ["xpath=//div[@id='makeable']/div[3]/p", "xpath:idRelative"],
+        ["xpath=//div[3]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Mojito')]", "xpath:innerText"]
+      ],
+      "value": "Mojito"
+    }, {
+      "id": "905ba64a-484c-4265-86c5-403f6a76905c",
+      "comment": "",
+      "command": "click",
+      "target": "id=dropdownMenuButton",
+      "targets": [
+        ["id=dropdownMenuButton", "id"],
+        ["css=#dropdownMenuButton", "css:finder"],
+        ["xpath=//button[@id='dropdownMenuButton']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c05b52e9-8026-4918-92e0-015f05050b05",
+      "comment": "",
+      "command": "click",
+      "target": "id=ascending",
+      "targets": [
+        ["id=ascending", "id"],
+        ["name=order", "name"],
+        ["css=#ascending", "css:finder"],
+        ["xpath=//input[@id='ascending']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "146b7323-24c5-41f3-9282-ec4500408d44",
+      "comment": "",
+      "command": "click",
+      "target": "id=dropdownMenuButton",
+      "targets": [
+        ["id=dropdownMenuButton", "id"],
+        ["css=#dropdownMenuButton", "css:finder"],
+        ["xpath=//button[@id='dropdownMenuButton']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6c4854a-7e87-4759-9035-c816c6facb2d",
+      "comment": "",
+      "command": "click",
+      "target": "id=sortStrength",
+      "targets": [
+        ["id=sortStrength", "id"],
+        ["linkText=Strength", "linkText"],
+        ["css=#sortStrength", "css:finder"],
+        ["xpath=//a[contains(text(),'Strength')]", "xpath:link"],
+        ["xpath=//a[@id='sortStrength']", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//a[5]", "xpath:position"],
+        ["xpath=//a[contains(.,'Strength')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f432130a-18b6-4d36-9155-57ef8aacf179",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-sm-4:nth-child(1) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(1) > p", "css:finder"],
+        ["xpath=//div[@id='makeable']/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Blush martini')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b2a9c884-6ac9-4052-a0ca-6bb132aa7909",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(1) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(1) > p", "css:finder"],
+        ["xpath=//div[@id='makeable']/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Blush martini')]", "xpath:innerText"]
+      ],
+      "value": "Blush martini"
+    }, {
+      "id": "50fa10d1-8291-442c-b42b-128b8c618007",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(2) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(2) > p", "css:finder"],
+        ["xpath=//div[@id='makeable']/div[2]/p", "xpath:idRelative"],
+        ["xpath=//div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Mojito')]", "xpath:innerText"]
+      ],
+      "value": "Mojito"
+    }, {
+      "id": "0ba90225-b63f-4677-a27d-bee1b20a8ce7",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(3) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(3) > p", "css:finder"],
+        ["xpath=//div[@id='makeable']/div[3]/p", "xpath:idRelative"],
+        ["xpath=//div[3]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Sloe gin Negroni')]", "xpath:innerText"]
+      ],
+      "value": "Sloe gin Negroni"
+    }, {
+      "id": "73f902c7-97d1-4a86-9fba-4659325d85da",
+      "comment": "",
+      "command": "click",
+      "target": "id=descending",
+      "targets": [
+        ["id=descending", "id"],
+        ["css=#descending", "css:finder"],
+        ["xpath=//input[@id='descending']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "18518db3-1a09-48b7-b22d-c2c3f4952e04",
+      "comment": "",
+      "command": "click",
+      "target": "id=dropdownMenuButton",
+      "targets": [
+        ["id=dropdownMenuButton", "id"],
+        ["css=#dropdownMenuButton", "css:finder"],
+        ["xpath=//button[@id='dropdownMenuButton']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b18177a-ec71-48a1-a463-b8a1fc85c9c8",
+      "comment": "",
+      "command": "click",
+      "target": "id=sortStrength",
+      "targets": [
+        ["id=sortStrength", "id"],
+        ["linkText=Strength", "linkText"],
+        ["css=#sortStrength", "css:finder"],
+        ["xpath=//a[contains(text(),'Strength')]", "xpath:link"],
+        ["xpath=//a[@id='sortStrength']", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//a[5]", "xpath:position"],
+        ["xpath=//a[contains(.,'Strength')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d11ccb44-bc4c-462d-9038-8c5cc9e3830c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(1) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(1) > p", "css:finder"],
+        ["xpath=//div[@id='makeable']/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Sloe gin Negroni')]", "xpath:innerText"]
+      ],
+      "value": "Sloe gin Negroni"
+    }, {
+      "id": "64a0d416-2af2-4401-b2a6-503b046c22ee",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(2) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(2) > p", "css:finder"],
+        ["xpath=//div[@id='makeable']/div[2]/p", "xpath:idRelative"],
+        ["xpath=//div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Mojito')]", "xpath:innerText"]
+      ],
+      "value": "Mojito"
+    }, {
+      "id": "78943aaa-347f-495e-9bf2-88a2a2f1c585",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(3) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(3) > p", "css:finder"],
+        ["xpath=//div[@id='makeable']/div[3]/p", "xpath:idRelative"],
+        ["xpath=//div[3]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Blush martini')]", "xpath:innerText"]
+      ],
+      "value": "Blush martini"
+    }, {
+      "id": "1df57097-1453-41fe-88c1-870a6db1669d",
+      "comment": "",
+      "command": "click",
+      "target": "id=ascending",
+      "targets": [
+        ["id=ascending", "id"],
+        ["name=order", "name"],
+        ["css=#ascending", "css:finder"],
+        ["xpath=//input[@id='ascending']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eacd37aa-e651-4fd4-8a5a-7d58bb1a053e",
+      "comment": "",
+      "command": "click",
+      "target": "id=dropdownMenuButton",
+      "targets": [
+        ["id=dropdownMenuButton", "id"],
+        ["css=#dropdownMenuButton", "css:finder"],
+        ["xpath=//button[@id='dropdownMenuButton']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7df2a9be-7809-4e26-a8b6-e1d8a77dc36a",
+      "comment": "",
+      "command": "click",
+      "target": "id=sortCreation",
+      "targets": [
+        ["id=sortCreation", "id"],
+        ["linkText=Creation date", "linkText"],
+        ["css=#sortCreation", "css:finder"],
+        ["xpath=//a[contains(text(),'Creation date')]", "xpath:link"],
+        ["xpath=//a[@id='sortCreation']", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '#')])[6]", "xpath:href"],
+        ["xpath=//a[6]", "xpath:position"],
+        ["xpath=//a[contains(.,'Creation date')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "16e8ceb0-99c8-491c-ad9f-74b25cc85891",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-sm-4:nth-child(1) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(1) > p", "css:finder"],
+        ["xpath=//div[@id='makeable']/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Sloe gin Negroni')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b458d63f-fda8-44d5-8ff8-83a1fabd05af",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(1) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(1) > p", "css:finder"],
+        ["xpath=//div[@id='makeable']/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Sloe gin Negroni')]", "xpath:innerText"]
+      ],
+      "value": "Sloe gin Negroni"
+    }, {
+      "id": "8f8c437f-2b87-4e5b-b458-0b4b2f8d9f72",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(2) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(2) > p", "css:finder"],
+        ["xpath=//div[@id='makeable']/div[2]/p", "xpath:idRelative"],
+        ["xpath=//div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Mojito')]", "xpath:innerText"]
+      ],
+      "value": "Mojito"
+    }, {
+      "id": "3d7ee31b-4a1a-42b7-825a-77e74b46b2de",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(3) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(3) > p", "css:finder"],
+        ["xpath=//div[@id='makeable']/div[3]/p", "xpath:idRelative"],
+        ["xpath=//div[3]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Blush martini')]", "xpath:innerText"]
+      ],
+      "value": "Blush martini"
+    }, {
+      "id": "64db4dee-3d34-44d8-b57e-33f1d7a6e97a",
+      "comment": "",
+      "command": "click",
+      "target": "id=descending",
+      "targets": [
+        ["id=descending", "id"],
+        ["css=#descending", "css:finder"],
+        ["xpath=//input[@id='descending']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "897b01b2-b628-402c-9348-82f69607b8b9",
+      "comment": "",
+      "command": "click",
+      "target": "id=dropdownMenuButton",
+      "targets": [
+        ["id=dropdownMenuButton", "id"],
+        ["css=#dropdownMenuButton", "css:finder"],
+        ["xpath=//button[@id='dropdownMenuButton']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "76413066-0d5f-4e9d-8c69-5943f063f9bb",
+      "comment": "",
+      "command": "click",
+      "target": "id=sortCreation",
+      "targets": [
+        ["id=sortCreation", "id"],
+        ["linkText=Creation date", "linkText"],
+        ["css=#sortCreation", "css:finder"],
+        ["xpath=//a[contains(text(),'Creation date')]", "xpath:link"],
+        ["xpath=//a[@id='sortCreation']", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '#')])[6]", "xpath:href"],
+        ["xpath=//a[6]", "xpath:position"],
+        ["xpath=//a[contains(.,'Creation date')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0fc113b2-d193-4453-8272-51d34becef0e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(1) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(1) > p", "css:finder"],
+        ["xpath=//div[@id='makeable']/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Blush martini')]", "xpath:innerText"]
+      ],
+      "value": "Blush martini"
+    }, {
+      "id": "0aab26ce-b8d5-43f6-8786-e00e3493998c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(2) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(2) > p", "css:finder"],
+        ["xpath=//div[@id='makeable']/div[2]/p", "xpath:idRelative"],
+        ["xpath=//div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Mojito')]", "xpath:innerText"]
+      ],
+      "value": "Mojito"
+    }, {
+      "id": "93625424-02f3-41af-ad6f-1ca7eaf450f1",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(3) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(3) > p", "css:finder"],
+        ["xpath=//div[@id='makeable']/div[3]/p", "xpath:idRelative"],
+        ["xpath=//div[3]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Sloe gin Negroni')]", "xpath:innerText"]
+      ],
+      "value": "Sloe gin Negroni"
+    }, {
+      "id": "da4207bb-99bc-4fa5-8b48-eb0d7e93d869",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "125eba07-98f3-4ac5-87be-c2ffd24032da",
+    "name": "TP10_SortiranjeKoktelZaKojeFail3IliManjeSastojaka",
+    "commands": [{
+      "id": "580b574f-0d5a-4aae-b67b-24da9aabc4dd",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/index.php/Guest",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cf4a748d-86d9-4720-8b29-79499ef12576",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "10511fe4-4739-4bc5-8bae-51cbed318ceb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col:nth-child(3)",
+      "targets": [
+        ["css=.col:nth-child(3)", "css:finder"],
+        ["xpath=(//div[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='fixToTop']/div[3]", "xpath:idRelative"],
+        ["xpath=//div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "80ca22e3-2d58-43d3-a885-56c2e6b50eaf",
+      "comment": "",
+      "command": "click",
+      "target": "id=user",
+      "targets": [
+        ["id=user", "id"],
+        ["name=username", "name"],
+        ["css=#user", "css:finder"],
+        ["xpath=//input[@id='user']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0bf8fdb3-9047-42b7-84aa-b8ff56ed6275",
+      "comment": "",
+      "command": "type",
+      "target": "id=user",
+      "targets": [
+        ["id=user", "id"],
+        ["name=username", "name"],
+        ["css=#user", "css:finder"],
+        ["xpath=//input[@id='user']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "anastasija123"
+    }, {
+      "id": "a92d4217-22da-48fd-8940-c50e2d92ca6d",
+      "comment": "",
+      "command": "type",
+      "target": "id=pass",
+      "targets": [
+        ["id=pass", "id"],
+        ["name=pass", "name"],
+        ["css=#pass", "css:finder"],
+        ["xpath=//input[@id='pass']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "sifra12345"
+    }, {
+      "id": "486001b4-a97b-44f1-884b-5dee232e25d0",
+      "comment": "",
+      "command": "click",
+      "target": "id=Login",
+      "targets": [
+        ["id=Login", "id"],
+        ["css=#Login", "css:finder"],
+        ["xpath=//input[@id='Login']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e72c3b3-4479-4f84-bb02-cfe739333124",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col:nth-child(4)",
+      "targets": [
+        ["css=.col:nth-child(4)", "css:finder"],
+        ["xpath=(//div[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='fixToTop']/div[4]", "xpath:idRelative"],
+        ["xpath=//div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f944fea7-d24a-424a-bf2d-1b992435dd18",
+      "comment": "",
+      "command": "click",
+      "target": "css=.filter-option-inner-inner",
+      "targets": [
+        ["css=.filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8f03e0ab-bd6d-4303-a01d-112799316f83",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bs-select-1-0 > .text",
+      "targets": [
+        ["css=#bs-select-1-0 > .text", "css:finder"],
+        ["xpath=//a[@id='bs-select-1-0']/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Angostura bitters')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "05d0c2da-10c5-4984-a301-5d6ddf1b41e1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.filter-option-inner-inner",
+      "targets": [
+        ["css=.filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ea73e4a-4e3f-4e4d-9294-4c03241b94a6",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bs-select-1-1 > .text",
+      "targets": [
+        ["css=#bs-select-1-1 > .text", "css:finder"],
+        ["xpath=//a[@id='bs-select-1-1']/span", "xpath:idRelative"],
+        ["xpath=//li[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Bacardi Superior rum')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "68bfe1ae-4212-42c6-a2e5-fc444208b087",
+      "comment": "",
+      "command": "select",
+      "target": "id=select-country",
+      "targets": [],
+      "value": "label=Bacardi Superior rum"
+    }, {
+      "id": "6dfe66b9-6ba2-4184-b153-ea574818fede",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown-toggle",
+      "targets": [
+        ["css=.dropdown-toggle", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Bacardi Superior rum')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a1d801c-dc6a-4983-bda4-f2f5d6014dd1",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bs-select-1-2 > .text",
+      "targets": [
+        ["css=#bs-select-1-2 > .text", "css:finder"],
+        ["xpath=//a[@id='bs-select-1-2']/span", "xpath:idRelative"],
+        ["xpath=//li[3]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Campari')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "27b0b7ec-d951-4539-a50b-d33347d97746",
+      "comment": "",
+      "command": "select",
+      "target": "id=select-country",
+      "targets": [],
+      "value": "label=Campari"
+    }, {
+      "id": "a09ab810-2d7b-470d-8b0a-1e1e92ce2e2e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.filter-option-inner-inner",
+      "targets": [
+        ["css=.filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed5850e7-fd33-429e-9a14-98656f50b2bf",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bs-select-1-3 > .text",
+      "targets": [
+        ["css=#bs-select-1-3 > .text", "css:finder"],
+        ["xpath=//a[@id='bs-select-1-3']/span", "xpath:idRelative"],
+        ["xpath=//li[4]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Cranberry juice')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "50799aa3-830b-43f7-962e-68621ea60db5",
+      "comment": "",
+      "command": "select",
+      "target": "id=select-country",
+      "targets": [],
+      "value": "label=Cranberry juice"
+    }, {
+      "id": "8ecefa53-56bc-4fd6-b77d-d0bef0fd6a8e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.filter-option-inner-inner",
+      "targets": [
+        ["css=.filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1756d957-3360-4f94-b119-5211e9845ed1",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bs-select-1-4 > .text",
+      "targets": [
+        ["css=#bs-select-1-4 > .text", "css:finder"],
+        ["xpath=//a[@id='bs-select-1-4']/span", "xpath:idRelative"],
+        ["xpath=//li[5]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Extra-dry vermouth')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b86be11-7563-4aac-bb71-358aeda56746",
+      "comment": "",
+      "command": "select",
+      "target": "id=select-country",
+      "targets": [],
+      "value": "label=Extra-dry vermouth"
+    }, {
+      "id": "1e8aefc8-e4f4-4ce1-a42e-c1bd599ec800",
+      "comment": "",
+      "command": "click",
+      "target": "css=.filter-option-inner-inner",
+      "targets": [
+        ["css=.filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9480d303-d02a-4a73-8d28-43230477394d",
+      "comment": "",
+      "command": "click",
+      "target": "id=bs-select-1-5",
+      "targets": [
+        ["id=bs-select-1-5", "id"],
+        ["linkText=Ice", "linkText"],
+        ["css=#bs-select-1-5", "css:finder"],
+        ["xpath=//a[@id='bs-select-1-5']", "xpath:attributes"],
+        ["xpath=//div[@id='bs-select-1']/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Ice')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8db5e2db-abea-430f-8617-e8dc0c84be31",
+      "comment": "",
+      "command": "select",
+      "target": "id=select-country",
+      "targets": [],
+      "value": "label=Ice"
+    }, {
+      "id": "119ae6d6-f679-4c75-b752-4616a9968361",
+      "comment": "",
+      "command": "click",
+      "target": "css=.filter-option-inner-inner",
+      "targets": [
+        ["css=.filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0639e5e6-551e-4c11-b66d-2c26aec3fe03",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bs-select-1-6 > .text",
+      "targets": [
+        ["css=#bs-select-1-6 > .text", "css:finder"],
+        ["xpath=//a[@id='bs-select-1-6']/span", "xpath:idRelative"],
+        ["xpath=//li[7]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Lemon juice')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "41739444-22b3-4c23-9b43-2d9d7da7533b",
+      "comment": "",
+      "command": "select",
+      "target": "id=select-country",
+      "targets": [],
+      "value": "label=Lemon juice"
+    }, {
+      "id": "ade2ff61-43ee-4f04-a211-3ee81f4efb05",
+      "comment": "",
+      "command": "click",
+      "target": "css=.filter-option-inner-inner",
+      "targets": [
+        ["css=.filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a0c80cb-7ed9-45f7-8665-ebc4f83401f3",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bs-select-1-7 > .text",
+      "targets": [
+        ["css=#bs-select-1-7 > .text", "css:finder"],
+        ["xpath=//a[@id='bs-select-1-7']/span", "xpath:idRelative"],
+        ["xpath=//li[8]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Lemons')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d61dc68-6e4f-442b-a229-75a2c8c471d3",
+      "comment": "",
+      "command": "select",
+      "target": "id=select-country",
+      "targets": [],
+      "value": "label=Lemons"
+    }, {
+      "id": "76387344-e36a-4871-b4bd-ba8a8346d40b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.filter-option-inner-inner",
+      "targets": [
+        ["css=.filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b85a09d8-ab46-497f-84ec-410aa2667016",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bs-select-1-8 > .text",
+      "targets": [
+        ["css=#bs-select-1-8 > .text", "css:finder"],
+        ["xpath=//a[@id='bs-select-1-8']/span", "xpath:idRelative"],
+        ["xpath=//li[9]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Lime juice')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae4cb862-cf2c-4163-9726-afcfadebbe3b",
+      "comment": "",
+      "command": "select",
+      "target": "id=select-country",
+      "targets": [],
+      "value": "label=Lime juice"
+    }, {
+      "id": "f363a0b3-cc2d-4f7f-93f5-884c71a1f1dd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-sm-4:nth-child(3)",
+      "targets": [
+        ["css=.col-sm-4:nth-child(3)", "css:finder"],
+        ["xpath=//div/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "21f78e94-edc2-414f-88ce-c7c77e5a5100",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown-toggle",
+      "targets": [
+        ["css=.dropdown-toggle", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Lime juice')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "678fc510-5219-4250-af87-f4d9473e5c00",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bs-select-1-9 > .text",
+      "targets": [
+        ["css=#bs-select-1-9 > .text", "css:finder"],
+        ["xpath=//a[@id='bs-select-1-9']/span", "xpath:idRelative"],
+        ["xpath=//li[10]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Maple syrup')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "52a3f545-b09a-4aa6-a343-08b82bd8295a",
+      "comment": "",
+      "command": "select",
+      "target": "id=select-country",
+      "targets": [],
+      "value": "label=Maple syrup"
+    }, {
+      "id": "6de6caca-8666-44d5-aa5c-1747a06a0c4c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown-toggle",
+      "targets": [
+        ["css=.dropdown-toggle", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Maple syrup')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fce2a96e-005e-4097-98a1-556d7abceb35",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bs-select-1-11 > .text",
+      "targets": [
+        ["css=#bs-select-1-11 > .text", "css:finder"],
+        ["xpath=//a[@id='bs-select-1-11']/span", "xpath:idRelative"],
+        ["xpath=//li[12]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Orange')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "69afd101-95d1-48f7-86cf-e472dba34c11",
+      "comment": "",
+      "command": "select",
+      "target": "id=select-country",
+      "targets": [],
+      "value": "label=Orange"
+    }, {
+      "id": "47fa9008-cbe8-4919-9cd4-f03534a0a166",
+      "comment": "",
+      "command": "click",
+      "target": "css=.filter-option-inner-inner",
+      "targets": [
+        ["css=.filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5428a420-b052-4ebc-bb22-903b5c9b1525",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bs-select-1-13 > .text",
+      "targets": [
+        ["css=#bs-select-1-13 > .text", "css:finder"],
+        ["xpath=//a[@id='bs-select-1-13']/span", "xpath:idRelative"],
+        ["xpath=//li[14]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Soda water')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d59162a6-418c-48a8-b1f9-7d4e317bb603",
+      "comment": "",
+      "command": "select",
+      "target": "id=select-country",
+      "targets": [],
+      "value": "label=Soda water"
+    }, {
+      "id": "3f925a61-dc82-4651-b30d-a7b5315152f1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.filter-option-inner-inner",
+      "targets": [
+        ["css=.filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a921a9d0-4d2a-4865-a034-8299ccf2f3a8",
+      "comment": "",
+      "command": "click",
+      "target": "id=bs-select-1-14",
+      "targets": [
+        ["id=bs-select-1-14", "id"],
+        ["linkText=Sugar", "linkText"],
+        ["css=#bs-select-1-14", "css:finder"],
+        ["xpath=//a[@id='bs-select-1-14']", "xpath:attributes"],
+        ["xpath=//div[@id='bs-select-1']/ul/li[15]/a", "xpath:idRelative"],
+        ["xpath=//li[15]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sugar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c055756a-8dbb-4d64-aa4c-34d328c02ac9",
+      "comment": "",
+      "command": "select",
+      "target": "id=select-country",
+      "targets": [],
+      "value": "label=Sugar"
+    }, {
+      "id": "1d3f1735-f347-411c-a33c-dbd52ea7913b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.filter-option-inner-inner",
+      "targets": [
+        ["css=.filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e7bb42b-17ef-40db-b356-04ef0858442c",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bs-select-1-15 > .text",
+      "targets": [
+        ["css=#bs-select-1-15 > .text", "css:finder"],
+        ["xpath=//a[@id='bs-select-1-15']/span", "xpath:idRelative"],
+        ["xpath=//li[16]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Tequila')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3432a71c-8baf-428b-9377-b72af5740eb7",
+      "comment": "",
+      "command": "select",
+      "target": "id=select-country",
+      "targets": [],
+      "value": "label=Tequila"
+    }, {
+      "id": "3c3fe631-120a-4fdd-b264-1502f42d9874",
+      "comment": "",
+      "command": "click",
+      "target": "css=.filter-option-inner-inner",
+      "targets": [
+        ["css=.filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2124cd62-8843-42d6-8760-dbdac0af2dee",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bs-select-1-16 > .text",
+      "targets": [
+        ["css=#bs-select-1-16 > .text", "css:finder"],
+        ["xpath=//a[@id='bs-select-1-16']/span", "xpath:idRelative"],
+        ["xpath=//li[17]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Thyme')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "85377f1d-343a-4aae-ae8b-9e274ebd7fd5",
+      "comment": "",
+      "command": "select",
+      "target": "id=select-country",
+      "targets": [],
+      "value": "label=Thyme"
+    }, {
+      "id": "ac51285e-424e-496d-9823-1236341a1492",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col:nth-child(2)",
+      "targets": [
+        ["css=.col:nth-child(2)", "css:finder"],
+        ["xpath=(//div[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='fixToTop']/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "afa887ad-29bd-45b3-87b1-d096b0066e66",
+      "comment": "",
+      "command": "click",
+      "target": "id=dropdownMenuButton",
+      "targets": [
+        ["id=dropdownMenuButton", "id"],
+        ["css=#dropdownMenuButton", "css:finder"],
+        ["xpath=//button[@id='dropdownMenuButton']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a085e6e-4ac7-490c-ba93-bac839d36d4c",
+      "comment": "",
+      "command": "click",
+      "target": "id=sortRating",
+      "targets": [
+        ["id=sortRating", "id"],
+        ["linkText=Rating", "linkText"],
+        ["css=#sortRating", "css:finder"],
+        ["xpath=//a[contains(text(),'Rating')]", "xpath:link"],
+        ["xpath=//a[@id='sortRating']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Rating')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb6f0d47-7bc9-419a-8c9d-8851112e3f58",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(1) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(1) > p", "css:finder"],
+        ["xpath=//div[@id='makeableMissing']/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Sloe gin Negroni')]", "xpath:innerText"]
+      ],
+      "value": "Sloe gin Negroni"
+    }, {
+      "id": "d297ff76-0aa1-4b95-807f-54f57142e053",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(2) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(2) > p", "css:finder"],
+        ["xpath=//div[@id='makeableMissing']/div[2]/p", "xpath:idRelative"],
+        ["xpath=//div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Mojito')]", "xpath:innerText"]
+      ],
+      "value": "Mojito"
+    }, {
+      "id": "fce417ed-41f1-4c3b-8beb-f551865c422c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(3) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(3) > p", "css:finder"],
+        ["xpath=//div[@id='makeableMissing']/div[3]/p", "xpath:idRelative"],
+        ["xpath=//div[3]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Blush martini')]", "xpath:innerText"]
+      ],
+      "value": "Blush martini"
+    }, {
+      "id": "98f7f11f-97f7-49aa-aa63-b24a5ab880af",
+      "comment": "",
+      "command": "click",
+      "target": "id=descending",
+      "targets": [
+        ["id=descending", "id"],
+        ["css=#descending", "css:finder"],
+        ["xpath=//input[@id='descending']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c7ca9b7-c5b5-401f-9721-931561453cae",
+      "comment": "",
+      "command": "click",
+      "target": "id=dropdownMenuButton",
+      "targets": [
+        ["id=dropdownMenuButton", "id"],
+        ["css=#dropdownMenuButton", "css:finder"],
+        ["xpath=//button[@id='dropdownMenuButton']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "51cedcf9-d007-4b66-b497-0dd566fbad4f",
+      "comment": "",
+      "command": "click",
+      "target": "id=sortRating",
+      "targets": [
+        ["id=sortRating", "id"],
+        ["linkText=Rating", "linkText"],
+        ["css=#sortRating", "css:finder"],
+        ["xpath=//a[contains(text(),'Rating')]", "xpath:link"],
+        ["xpath=//a[@id='sortRating']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Rating')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9633d62-2881-4338-a201-cc51f42c7663",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(1) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(1) > p", "css:finder"],
+        ["xpath=//div[@id='makeableMissing']/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Mojito')]", "xpath:innerText"]
+      ],
+      "value": "Mojito"
+    }, {
+      "id": "d84f1c58-ff5f-45d1-940d-54bb12cff80f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(2) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(2) > p", "css:finder"],
+        ["xpath=//div[@id='makeableMissing']/div[2]/p", "xpath:idRelative"],
+        ["xpath=//div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Blush martini')]", "xpath:innerText"]
+      ],
+      "value": "Blush martini"
+    }, {
+      "id": "021d6fbf-aacf-45be-acfc-43225d6fb723",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(3) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(3) > p", "css:finder"],
+        ["xpath=//div[@id='makeableMissing']/div[3]/p", "xpath:idRelative"],
+        ["xpath=//div[3]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Sloe gin Negroni')]", "xpath:innerText"]
+      ],
+      "value": "Sloe gin Negroni"
+    }, {
+      "id": "34cbc183-1283-4ad9-9321-b8f718649b9b",
+      "comment": "",
+      "command": "click",
+      "target": "id=ascending",
+      "targets": [
+        ["id=ascending", "id"],
+        ["name=order", "name"],
+        ["css=#ascending", "css:finder"],
+        ["xpath=//input[@id='ascending']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c57c1193-f36f-41ff-9ac8-17cf6c5137b1",
+      "comment": "",
+      "command": "click",
+      "target": "id=dropdownMenuButton",
+      "targets": [
+        ["id=dropdownMenuButton", "id"],
+        ["css=#dropdownMenuButton", "css:finder"],
+        ["xpath=//button[@id='dropdownMenuButton']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "712f5dc1-a156-4559-a9bf-dbc922085350",
+      "comment": "",
+      "command": "click",
+      "target": "id=sortAlpha",
+      "targets": [
+        ["id=sortAlpha", "id"],
+        ["linkText=Alphabetical", "linkText"],
+        ["css=#sortAlpha", "css:finder"],
+        ["xpath=//a[contains(text(),'Alphabetical')]", "xpath:link"],
+        ["xpath=//a[@id='sortAlpha']", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Alphabetical')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "746f7325-c5ac-4515-8da4-ad3869896bc7",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(1) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(1) > p", "css:finder"],
+        ["xpath=//div[@id='makeableMissing']/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Sloe gin Negroni')]", "xpath:innerText"]
+      ],
+      "value": "Sloe gin Negroni"
+    }, {
+      "id": "a256a101-d155-4952-a6de-35992eb0bc9a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(2) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(2) > p", "css:finder"],
+        ["xpath=//div[@id='makeableMissing']/div[2]/p", "xpath:idRelative"],
+        ["xpath=//div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Mojito')]", "xpath:innerText"]
+      ],
+      "value": "Mojito"
+    }, {
+      "id": "bcbe23c3-14f1-4f12-b500-3e3b022b306c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(3) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(3) > p", "css:finder"],
+        ["xpath=//div[@id='makeableMissing']/div[3]/p", "xpath:idRelative"],
+        ["xpath=//div[3]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Blush martini')]", "xpath:innerText"]
+      ],
+      "value": "Blush martini"
+    }, {
+      "id": "33c218b5-9bf5-4765-99eb-c2b7453eeaf2",
+      "comment": "",
+      "command": "click",
+      "target": "id=descending",
+      "targets": [
+        ["id=descending", "id"],
+        ["css=#descending", "css:finder"],
+        ["xpath=//input[@id='descending']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb63256e-a96e-4fa3-a740-6a4363646563",
+      "comment": "",
+      "command": "click",
+      "target": "id=dropdownMenuButton",
+      "targets": [
+        ["id=dropdownMenuButton", "id"],
+        ["css=#dropdownMenuButton", "css:finder"],
+        ["xpath=//button[@id='dropdownMenuButton']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "95fe5d48-d3b6-4d6d-bd6c-7e1fb0d9b025",
+      "comment": "",
+      "command": "click",
+      "target": "id=sortAlpha",
+      "targets": [
+        ["id=sortAlpha", "id"],
+        ["linkText=Alphabetical", "linkText"],
+        ["css=#sortAlpha", "css:finder"],
+        ["xpath=//a[contains(text(),'Alphabetical')]", "xpath:link"],
+        ["xpath=//a[@id='sortAlpha']", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Alphabetical')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf46f4b9-9017-4297-842a-95346fd52e6a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(1) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(1) > p", "css:finder"],
+        ["xpath=//div[@id='makeableMissing']/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Blush martini')]", "xpath:innerText"]
+      ],
+      "value": "Blush martini"
+    }, {
+      "id": "0ec40a48-0427-4ca7-9e21-5749b0a4142c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(2) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(2) > p", "css:finder"],
+        ["xpath=//div[@id='makeableMissing']/div[2]/p", "xpath:idRelative"],
+        ["xpath=//div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Mojito')]", "xpath:innerText"]
+      ],
+      "value": "Mojito"
+    }, {
+      "id": "5b171a93-0358-441b-8f8f-d90d4a2fb472",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(3) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(3) > p", "css:finder"],
+        ["xpath=//div[@id='makeableMissing']/div[3]/p", "xpath:idRelative"],
+        ["xpath=//div[3]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Sloe gin Negroni')]", "xpath:innerText"]
+      ],
+      "value": "Sloe gin Negroni"
+    }, {
+      "id": "e2654fed-056f-4bf2-9061-79cc66fc9a44",
+      "comment": "",
+      "command": "click",
+      "target": "id=dropdownMenuButton",
+      "targets": [
+        ["id=dropdownMenuButton", "id"],
+        ["css=#dropdownMenuButton", "css:finder"],
+        ["xpath=//button[@id='dropdownMenuButton']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "39646188-6517-48e6-963a-ad2cc35f035f",
+      "comment": "",
+      "command": "click",
+      "target": "id=sortNum",
+      "targets": [
+        ["id=sortNum", "id"],
+        ["linkText=Number of ingredients", "linkText"],
+        ["css=#sortNum", "css:finder"],
+        ["xpath=//a[contains(text(),'Number of ingredients')]", "xpath:link"],
+        ["xpath=//a[@id='sortNum']", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '#')])[3]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Number of ingredients')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0f80998e-686f-4c71-b719-ff744702bee8",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,122.4000015258789)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0f35e5d1-b337-4a63-8bf0-0737049a50af",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(1) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(1) > p", "css:finder"],
+        ["xpath=//div[@id='makeableMissing']/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Blush martini')]", "xpath:innerText"]
+      ],
+      "value": "Blush martini"
+    }, {
+      "id": "c7806d05-e922-427f-a859-661b99231100",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "a2a92fd7-fb77-470d-9469-95f02281edb9",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(2) > div:nth-child(3)",
+      "targets": [
+        ["css=div:nth-child(2) > div:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='mapDiv']/div/div/div[2]/div[3]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e3d1bee-cf78-4a5b-8658-bd5a1c86191f",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "08b7f4db-d70d-46d3-ab8e-0a2d1426b2ba",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(2) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(2) > p", "css:finder"],
+        ["xpath=//div[@id='makeableMissing']/div[2]/p", "xpath:idRelative"],
+        ["xpath=//div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Mojito')]", "xpath:innerText"]
+      ],
+      "value": "Mojito"
+    }, {
+      "id": "a08f2720-66ff-4196-8fbc-36f51df04d4a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(3) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(3) > p", "css:finder"],
+        ["xpath=//div[@id='makeableMissing']/div[3]/p", "xpath:idRelative"],
+        ["xpath=//div[3]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Sloe gin Negroni')]", "xpath:innerText"]
+      ],
+      "value": "Sloe gin Negroni"
+    }, {
+      "id": "d8df98bf-e264-4557-bdef-05529a438a18",
+      "comment": "",
+      "command": "click",
+      "target": "id=dropdownMenuButton",
+      "targets": [
+        ["id=dropdownMenuButton", "id"],
+        ["css=#dropdownMenuButton", "css:finder"],
+        ["xpath=//button[@id='dropdownMenuButton']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bfd0b22b-6e21-4d8a-bcee-cee9dffa4999",
+      "comment": "",
+      "command": "click",
+      "target": "id=ascending",
+      "targets": [
+        ["id=ascending", "id"],
+        ["name=order", "name"],
+        ["css=#ascending", "css:finder"],
+        ["xpath=//input[@id='ascending']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a4e2b27-1fcf-43e0-9af2-ec430e6c80f9",
+      "comment": "",
+      "command": "click",
+      "target": "id=dropdownMenuButton",
+      "targets": [
+        ["id=dropdownMenuButton", "id"],
+        ["css=#dropdownMenuButton", "css:finder"],
+        ["xpath=//button[@id='dropdownMenuButton']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c81cc35-b0c8-4168-bf34-0e05e6fca6d3",
+      "comment": "",
+      "command": "click",
+      "target": "id=sortPrepTime",
+      "targets": [
+        ["id=sortPrepTime", "id"],
+        ["linkText=Prep time", "linkText"],
+        ["css=#sortPrepTime", "css:finder"],
+        ["xpath=//a[contains(text(),'Prep time')]", "xpath:link"],
+        ["xpath=//a[@id='sortPrepTime']", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '#')])[4]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Prep time')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa1900a7-7f9a-4953-9f78-03bf69c8a8e8",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(1) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(1) > p", "css:finder"],
+        ["xpath=//div[@id='makeableMissing']/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Sloe gin Negroni')]", "xpath:innerText"]
+      ],
+      "value": "Sloe gin Negroni"
+    }, {
+      "id": "505e3bb6-43ed-4563-b1af-4adece37f309",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(2) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(2) > p", "css:finder"],
+        ["xpath=//div[@id='makeableMissing']/div[2]/p", "xpath:idRelative"],
+        ["xpath=//div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Mojito')]", "xpath:innerText"]
+      ],
+      "value": "Mojito"
+    }, {
+      "id": "8995de57-b3b8-44c6-8c7b-95b136aab8e6",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(3) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(3) > p", "css:finder"],
+        ["xpath=//div[@id='makeableMissing']/div[3]/p", "xpath:idRelative"],
+        ["xpath=//div[3]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Blush martini')]", "xpath:innerText"]
+      ],
+      "value": "Blush martini"
+    }, {
+      "id": "7f5bfac3-fe1c-42ca-a9e5-4f120e9be1f9",
+      "comment": "",
+      "command": "click",
+      "target": "css=label:nth-child(4)",
+      "targets": [
+        ["css=label:nth-child(4)", "css:finder"],
+        ["xpath=//label[2]", "xpath:position"],
+        ["xpath=//label[contains(.,'Descending')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b036c3c-0baf-4aa4-9a86-cd3b1f76e048",
+      "comment": "",
+      "command": "click",
+      "target": "id=dropdownMenuButton",
+      "targets": [
+        ["id=dropdownMenuButton", "id"],
+        ["css=#dropdownMenuButton", "css:finder"],
+        ["xpath=//button[@id='dropdownMenuButton']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "464fed07-8c5b-47fa-aafa-a253eabd54bc",
+      "comment": "",
+      "command": "click",
+      "target": "id=sortPrepTime",
+      "targets": [
+        ["id=sortPrepTime", "id"],
+        ["linkText=Prep time", "linkText"],
+        ["css=#sortPrepTime", "css:finder"],
+        ["xpath=//a[contains(text(),'Prep time')]", "xpath:link"],
+        ["xpath=//a[@id='sortPrepTime']", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '#')])[4]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Prep time')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a290ca0-ee2c-4e0f-a668-f103def05d89",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(1) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(1) > p", "css:finder"],
+        ["xpath=//div[@id='makeableMissing']/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Mojito')]", "xpath:innerText"]
+      ],
+      "value": "Mojito"
+    }, {
+      "id": "6a255b9f-a6ba-4792-b973-a5f3f325f2c0",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(2) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(2) > p", "css:finder"],
+        ["xpath=//div[@id='makeableMissing']/div[2]/p", "xpath:idRelative"],
+        ["xpath=//div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Blush martini')]", "xpath:innerText"]
+      ],
+      "value": "Blush martini"
+    }, {
+      "id": "a830155d-5a79-4cbd-a6d3-3cd4a81c5701",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(3) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(3) > p", "css:finder"],
+        ["xpath=//div[@id='makeableMissing']/div[3]/p", "xpath:idRelative"],
+        ["xpath=//div[3]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Sloe gin Negroni')]", "xpath:innerText"]
+      ],
+      "value": "Sloe gin Negroni"
+    }, {
+      "id": "b1213d9b-ec75-47f6-9e04-e13565210575",
+      "comment": "",
+      "command": "click",
+      "target": "css=.float-start",
+      "targets": [
+        ["css=.float-start", "css:finder"],
+        ["xpath=//div[2]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "afee9510-9cc0-48b5-b85d-c3ee1e1d4a80",
+      "comment": "",
+      "command": "click",
+      "target": "id=ascending",
+      "targets": [
+        ["id=ascending", "id"],
+        ["name=order", "name"],
+        ["css=#ascending", "css:finder"],
+        ["xpath=//input[@id='ascending']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4f147e5-aa15-401d-9a71-9ccc87fec2d7",
+      "comment": "",
+      "command": "click",
+      "target": "id=dropdownMenuButton",
+      "targets": [
+        ["id=dropdownMenuButton", "id"],
+        ["css=#dropdownMenuButton", "css:finder"],
+        ["xpath=//button[@id='dropdownMenuButton']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a82d645-8f1e-4916-ac32-96d9b3c5ba26",
+      "comment": "",
+      "command": "click",
+      "target": "id=sortStrength",
+      "targets": [
+        ["id=sortStrength", "id"],
+        ["linkText=Strength", "linkText"],
+        ["css=#sortStrength", "css:finder"],
+        ["xpath=//a[contains(text(),'Strength')]", "xpath:link"],
+        ["xpath=//a[@id='sortStrength']", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//a[5]", "xpath:position"],
+        ["xpath=//a[contains(.,'Strength')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "40afae6b-e840-445d-b2e3-a4aee75e844a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(1) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(1) > p", "css:finder"],
+        ["xpath=//div[@id='makeableMissing']/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Sloe gin Negroni')]", "xpath:innerText"]
+      ],
+      "value": "Sloe gin Negroni"
+    }, {
+      "id": "bc3de7f9-f73a-4944-85fd-3729b9f145f9",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(2) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(2) > p", "css:finder"],
+        ["xpath=//div[@id='makeableMissing']/div[2]/p", "xpath:idRelative"],
+        ["xpath=//div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Mojito')]", "xpath:innerText"]
+      ],
+      "value": "Mojito"
+    }, {
+      "id": "734d6b83-b6dc-46e7-afe2-97ab94a6f78b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(3) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(3) > p", "css:finder"],
+        ["xpath=//div[@id='makeableMissing']/div[3]/p", "xpath:idRelative"],
+        ["xpath=//div[3]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Blush martini')]", "xpath:innerText"]
+      ],
+      "value": "Blush martini"
+    }, {
+      "id": "0d0325c4-dd35-450f-8c2f-16ce3e43c55f",
+      "comment": "",
+      "command": "click",
+      "target": "id=descending",
+      "targets": [
+        ["id=descending", "id"],
+        ["css=#descending", "css:finder"],
+        ["xpath=//input[@id='descending']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4372dcbb-1a13-4bbb-a8aa-7835e7f7502c",
+      "comment": "",
+      "command": "click",
+      "target": "id=dropdownMenuButton",
+      "targets": [
+        ["id=dropdownMenuButton", "id"],
+        ["css=#dropdownMenuButton", "css:finder"],
+        ["xpath=//button[@id='dropdownMenuButton']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "25fc0681-0c54-412b-b30e-2b7c31be5147",
+      "comment": "",
+      "command": "click",
+      "target": "id=sortStrength",
+      "targets": [
+        ["id=sortStrength", "id"],
+        ["linkText=Strength", "linkText"],
+        ["css=#sortStrength", "css:finder"],
+        ["xpath=//a[contains(text(),'Strength')]", "xpath:link"],
+        ["xpath=//a[@id='sortStrength']", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//a[5]", "xpath:position"],
+        ["xpath=//a[contains(.,'Strength')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4623b42d-76b6-4030-96b9-800024daf164",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(1) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(1) > p", "css:finder"],
+        ["xpath=//div[@id='makeableMissing']/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Blush martini')]", "xpath:innerText"]
+      ],
+      "value": "Blush martini"
+    }, {
+      "id": "dbd15484-77a8-4c77-8923-27102085459b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(2) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(2) > p", "css:finder"],
+        ["xpath=//div[@id='makeableMissing']/div[2]/p", "xpath:idRelative"],
+        ["xpath=//div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Mojito')]", "xpath:innerText"]
+      ],
+      "value": "Mojito"
+    }, {
+      "id": "27c9120b-6b19-44b5-bbbf-e1fb72be4277",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(3) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(3) > p", "css:finder"],
+        ["xpath=//div[@id='makeableMissing']/div[3]/p", "xpath:idRelative"],
+        ["xpath=//div[3]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Sloe gin Negroni')]", "xpath:innerText"]
+      ],
+      "value": "Sloe gin Negroni"
+    }, {
+      "id": "468d765f-3d76-4c8c-b370-bed233dcc8ee",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-sm-9",
+      "targets": [
+        ["css=.col-sm-9", "css:finder"],
+        ["xpath=//div/div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ecf41e4e-3baa-4882-a521-ffd92e763de5",
+      "comment": "",
+      "command": "click",
+      "target": "id=ascending",
+      "targets": [
+        ["id=ascending", "id"],
+        ["name=order", "name"],
+        ["css=#ascending", "css:finder"],
+        ["xpath=//input[@id='ascending']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b397f907-6494-4a0a-9cf5-42aecf40f1e9",
+      "comment": "",
+      "command": "click",
+      "target": "id=dropdownMenuButton",
+      "targets": [
+        ["id=dropdownMenuButton", "id"],
+        ["css=#dropdownMenuButton", "css:finder"],
+        ["xpath=//button[@id='dropdownMenuButton']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c8477b8-4896-4963-b2fa-51d5cad1e524",
+      "comment": "",
+      "command": "click",
+      "target": "id=sortCreation",
+      "targets": [
+        ["id=sortCreation", "id"],
+        ["linkText=Creation date", "linkText"],
+        ["css=#sortCreation", "css:finder"],
+        ["xpath=//a[contains(text(),'Creation date')]", "xpath:link"],
+        ["xpath=//a[@id='sortCreation']", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '#')])[6]", "xpath:href"],
+        ["xpath=//a[6]", "xpath:position"],
+        ["xpath=//a[contains(.,'Creation date')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0eaa8405-8bb8-49f3-b7d4-94e47f4879e3",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ed4527b-d8ed-4f66-90ef-7bf5abbfae2a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(1) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(1) > p", "css:finder"],
+        ["xpath=//div[@id='makeableMissing']/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Blush martini')]", "xpath:innerText"]
+      ],
+      "value": "Blush martini"
+    }, {
+      "id": "0a615fb0-cf6d-451e-89e3-c4fec3db4c6c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(2) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(2) > p", "css:finder"],
+        ["xpath=//div[@id='makeableMissing']/div[2]/p", "xpath:idRelative"],
+        ["xpath=//div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Mojito')]", "xpath:innerText"]
+      ],
+      "value": "Mojito"
+    }, {
+      "id": "2df95ce8-9f1b-442a-9b6e-a0cfe884ba1e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(3) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(3) > p", "css:finder"],
+        ["xpath=//div[@id='makeableMissing']/div[3]/p", "xpath:idRelative"],
+        ["xpath=//div[3]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Sloe gin Negroni')]", "xpath:innerText"]
+      ],
+      "value": "Sloe gin Negroni"
+    }, {
+      "id": "e747dab3-9d52-40b3-a678-c6dfc831defd",
+      "comment": "",
+      "command": "click",
+      "target": "id=descending",
+      "targets": [
+        ["id=descending", "id"],
+        ["css=#descending", "css:finder"],
+        ["xpath=//input[@id='descending']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d31ab96d-35ca-4151-b5b6-a9488f31d19c",
+      "comment": "",
+      "command": "click",
+      "target": "id=dropdownMenuButton",
+      "targets": [
+        ["id=dropdownMenuButton", "id"],
+        ["css=#dropdownMenuButton", "css:finder"],
+        ["xpath=//button[@id='dropdownMenuButton']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3cc04923-5b4f-4ef1-9386-5b2b659924ff",
+      "comment": "",
+      "command": "click",
+      "target": "id=sortCreation",
+      "targets": [
+        ["id=sortCreation", "id"],
+        ["linkText=Creation date", "linkText"],
+        ["css=#sortCreation", "css:finder"],
+        ["xpath=//a[contains(text(),'Creation date')]", "xpath:link"],
+        ["xpath=//a[@id='sortCreation']", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '#')])[6]", "xpath:href"],
+        ["xpath=//a[6]", "xpath:position"],
+        ["xpath=//a[contains(.,'Creation date')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d942d3a-83a9-4802-a23f-c5df8407afd9",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(1) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(1) > p", "css:finder"],
+        ["xpath=//div[@id='makeableMissing']/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Sloe gin Negroni')]", "xpath:innerText"]
+      ],
+      "value": "Sloe gin Negroni"
+    }, {
+      "id": "85d53293-411f-4b65-a6b3-801ca646493e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(2) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(2) > p", "css:finder"],
+        ["xpath=//div[@id='makeableMissing']/div[2]/p", "xpath:idRelative"],
+        ["xpath=//div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Mojito')]", "xpath:innerText"]
+      ],
+      "value": "Mojito"
+    }, {
+      "id": "b6e3fc13-2559-40a2-bfe4-8a28acb49226",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm-4:nth-child(3) > p",
+      "targets": [
+        ["css=.col-sm-4:nth-child(3) > p", "css:finder"],
+        ["xpath=//div[@id='makeableMissing']/div[3]/p", "xpath:idRelative"],
+        ["xpath=//div[3]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Blush martini')]", "xpath:innerText"]
+      ],
+      "value": "Blush martini"
+    }, {
+      "id": "27b33277-b2ed-41e7-9b32-870637ebcabe",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "c4536979-b216-4ea9-b366-a9da91b2fb43",
+    "name": "TP11_UspesnoSlanjePoruke",
+    "commands": [{
+      "id": "3112c2be-22e9-4762-8e0e-4255b767af94",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/index.php/Guest",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "308edb2c-1e5f-48ef-b2b4-288fa3f71d35",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "734dc50a-398e-4c6d-bbac-ba4d85cd3cff",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col:nth-child(3)",
+      "targets": [
+        ["css=.col:nth-child(3)", "css:finder"],
+        ["xpath=(//div[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='fixToTop']/div[3]", "xpath:idRelative"],
+        ["xpath=//div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d0c47911-88fd-4dac-9465-d4045c0e8e83",
+      "comment": "",
+      "command": "click",
+      "target": "id=user",
+      "targets": [
+        ["id=user", "id"],
+        ["name=username", "name"],
+        ["css=#user", "css:finder"],
+        ["xpath=//input[@id='user']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "da6a4652-2e22-4c4b-b724-8263fa2daba3",
+      "comment": "",
+      "command": "type",
+      "target": "id=user",
+      "targets": [
+        ["id=user", "id"],
+        ["name=username", "name"],
+        ["css=#user", "css:finder"],
+        ["xpath=//input[@id='user']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "anastasija123"
+    }, {
+      "id": "7fef67df-ec72-40b1-92a7-5572ff0b298f",
+      "comment": "",
+      "command": "type",
+      "target": "id=pass",
+      "targets": [
+        ["id=pass", "id"],
+        ["name=pass", "name"],
+        ["css=#pass", "css:finder"],
+        ["xpath=//input[@id='pass']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "sifra12345"
+    }, {
+      "id": "a4ca18df-293a-43f0-bc09-947058a13312",
+      "comment": "",
+      "command": "click",
+      "target": "id=Login",
+      "targets": [
+        ["id=Login", "id"],
+        ["css=#Login", "css:finder"],
+        ["xpath=//input[@id='Login']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e92f9702-f495-4347-ab61-4bbbe15409a7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col:nth-child(3)",
+      "targets": [
+        ["css=.col:nth-child(3)", "css:finder"],
+        ["xpath=(//div[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='fixToTop']/div[3]", "xpath:idRelative"],
+        ["xpath=//div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a8d62fba-75da-4492-bc8b-d45af20e3dc5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.filter-option-inner-inner",
+      "targets": [
+        ["css=.filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a2810bd-df27-43f3-a5c5-12af3dff909e",
+      "comment": "",
+      "command": "click",
+      "target": "id=bs-select-1-0",
+      "targets": [
+        ["id=bs-select-1-0", "id"],
+        ["linkText=andrijar", "linkText"],
+        ["css=#bs-select-1-0", "css:finder"],
+        ["xpath=//a[@id='bs-select-1-0']", "xpath:attributes"],
+        ["xpath=//div[@id='bs-select-1']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'andrijar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4176884f-a29a-426b-ba40-2880c7cc7d2f",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=currentChat",
+      "targets": [
+        ["id=currentChat", "id"],
+        ["css=#currentChat", "css:finder"],
+        ["xpath=//h3[@id='currentChat']", "xpath:attributes"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'andrijar')]", "xpath:innerText"]
+      ],
+      "value": "andrijar"
+    }, {
+      "id": "42e8c428-717f-44aa-a8a0-55ec41b78647",
+      "comment": "",
+      "command": "click",
+      "target": "id=idContent",
+      "targets": [
+        ["id=idContent", "id"],
+        ["name=content", "name"],
+        ["css=#idContent", "css:finder"],
+        ["xpath=//input[@id='idContent']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "60821251-2057-4e03-a68c-d26ea0fce56d",
+      "comment": "",
+      "command": "type",
+      "target": "id=idContent",
+      "targets": [
+        ["id=idContent", "id"],
+        ["name=content", "name"],
+        ["css=#idContent", "css:finder"],
+        ["xpath=//input[@id='idContent']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "yea"
+    }, {
+      "id": "b56edc9c-e1a1-4af3-ab1a-d8aab33ae7da",
+      "comment": "",
+      "command": "click",
+      "target": "id=sendMessage",
+      "targets": [
+        ["id=sendMessage", "id"],
+        ["css=#sendMessage", "css:finder"],
+        ["xpath=//input[@id='sendMessage']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d6be8b9-1723-441e-997f-c350d7c4390f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.msg-desc",
+      "targets": [
+        ["css=.msg-desc", "css:finder"],
+        ["xpath=//div[@id='CurrentMessagesArea']/li/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/ul/div/li/div/div", "xpath:position"]
+      ],
+      "value": "yea"
+    }, {
+      "id": "4c018ce6-3993-492e-80ad-eb73b85b9aae",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-sign-out",
+      "targets": [
+        ["css=.fa-sign-out", "css:finder"],
+        ["xpath=//div[@id='fixToTop']/div[5]/a/i", "xpath:idRelative"],
+        ["xpath=//div[5]/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e614dd72-57d2-4060-a77c-b61dc0c915d3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col:nth-child(3)",
+      "targets": [
+        ["css=.col:nth-child(3)", "css:finder"],
+        ["xpath=(//div[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='fixToTop']/div[3]", "xpath:idRelative"],
+        ["xpath=//div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d4f618b4-5877-4b95-b671-a27d088b5f33",
+      "comment": "",
+      "command": "click",
+      "target": "id=user",
+      "targets": [
+        ["id=user", "id"],
+        ["name=username", "name"],
+        ["css=#user", "css:finder"],
+        ["xpath=//input[@id='user']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce4a97d1-6964-4914-a5a5-db3f114dbd4a",
+      "comment": "",
+      "command": "type",
+      "target": "id=user",
+      "targets": [
+        ["id=user", "id"],
+        ["name=username", "name"],
+        ["css=#user", "css:finder"],
+        ["xpath=//input[@id='user']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "andrijar"
+    }, {
+      "id": "52639678-39d7-4b41-82b1-a58446581d0a",
+      "comment": "",
+      "command": "type",
+      "target": "id=pass",
+      "targets": [
+        ["id=pass", "id"],
+        ["name=pass", "name"],
+        ["css=#pass", "css:finder"],
+        ["xpath=//input[@id='pass']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "sifra12345"
+    }, {
+      "id": "dc0176c4-2037-4376-ac52-2203f7504609",
+      "comment": "",
+      "command": "click",
+      "target": "id=Login",
+      "targets": [
+        ["id=Login", "id"],
+        ["css=#Login", "css:finder"],
+        ["xpath=//input[@id='Login']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "09e8610d-239d-4073-8830-988ce3cdf677",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col:nth-child(3)",
+      "targets": [
+        ["css=.col:nth-child(3)", "css:finder"],
+        ["xpath=(//div[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='fixToTop']/div[3]", "xpath:idRelative"],
+        ["xpath=//div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e1573a9-cb5a-4379-b2e3-5a9f834250a1",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.msg-desc",
+      "targets": [
+        ["css=.msg-desc", "css:finder"],
+        ["xpath=//div[@id='CurrentMessagesArea']/li/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/ul/div/li/div/div", "xpath:position"]
+      ],
+      "value": "yea"
+    }, {
+      "id": "8835cace-fec3-4529-95b8-4d337732eb30",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "ab84d178-54b6-4b84-b99d-3fca322d11d5",
+    "name": "TP12_OcenivanjeKoktela",
+    "commands": [{
+      "id": "774c16ce-d4a0-45ba-9645-4772c22fd483",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/index.php/Guest",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4d7ff0c8-016f-4649-b660-f84c8d9bfa12",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "24330c78-002d-4409-8c3c-e7b844abfae9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col:nth-child(3)",
+      "targets": [
+        ["css=.col:nth-child(3)", "css:finder"],
+        ["xpath=(//div[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='fixToTop']/div[3]", "xpath:idRelative"],
+        ["xpath=//div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "637b3116-2896-45bd-9168-3374aa94fa5e",
+      "comment": "",
+      "command": "click",
+      "target": "id=user",
+      "targets": [
+        ["id=user", "id"],
+        ["name=username", "name"],
+        ["css=#user", "css:finder"],
+        ["xpath=//input[@id='user']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a25af8a-96f9-4def-9b14-9b0299787ae5",
+      "comment": "",
+      "command": "type",
+      "target": "id=user",
+      "targets": [
+        ["id=user", "id"],
+        ["name=username", "name"],
+        ["css=#user", "css:finder"],
+        ["xpath=//input[@id='user']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "anastasija123"
+    }, {
+      "id": "afbfa672-1083-417b-8171-3dd094a102ec",
+      "comment": "",
+      "command": "click",
+      "target": "id=pass",
+      "targets": [
+        ["id=pass", "id"],
+        ["name=pass", "name"],
+        ["css=#pass", "css:finder"],
+        ["xpath=//input[@id='pass']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2082a3ed-c35b-4ec3-b01b-e4f23a514e6a",
+      "comment": "",
+      "command": "type",
+      "target": "id=pass",
+      "targets": [
+        ["id=pass", "id"],
+        ["name=pass", "name"],
+        ["css=#pass", "css:finder"],
+        ["xpath=//input[@id='pass']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "sifra12345"
+    }, {
+      "id": "cd8c4b26-b832-4017-8447-b657717cee63",
+      "comment": "",
+      "command": "click",
+      "target": "id=Login",
+      "targets": [
+        ["id=Login", "id"],
+        ["css=#Login", "css:finder"],
+        ["xpath=//input[@id='Login']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "48d39736-186b-4203-b3d1-47617556dc60",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col:nth-child(2)",
+      "targets": [
+        ["css=.col:nth-child(2)", "css:finder"],
+        ["xpath=(//div[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='fixToTop']/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3e3c46d-9dbc-4ec7-a8f5-cfc6d74fb0db",
+      "comment": "",
+      "command": "click",
+      "target": "css=.filter-option-inner-inner",
+      "targets": [
+        ["css=.filter-option-inner-inner", "css:finder"],
+        ["xpath=//button/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f28ee482-341c-4fa3-b468-744e3554daef",
+      "comment": "",
+      "command": "click",
+      "target": "id=bs-select-1-1",
+      "targets": [
+        ["id=bs-select-1-1", "id"],
+        ["linkText=Mojito", "linkText"],
+        ["css=#bs-select-1-1", "css:finder"],
+        ["xpath=//a[@id='bs-select-1-1']", "xpath:attributes"],
+        ["xpath=//div[@id='bs-select-1']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Mojito')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f041f422-b678-4e4a-b4dc-64a16374d569",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=avgRating",
+      "targets": [
+        ["id=avgRating", "id"],
+        ["css=#avgRating", "css:finder"],
+        ["xpath=//p[@id='avgRating']", "xpath:attributes"],
+        ["xpath=//div[2]/div[2]/div/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Average rating: 0')]", "xpath:innerText"]
+      ],
+      "value": "Average rating: 0"
+    }, {
+      "id": "80105b0c-aa38-463f-b649-2ac84ade58ee",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=noOfRatings",
+      "targets": [
+        ["id=noOfRatings", "id"],
+        ["css=#noOfRatings", "css:finder"],
+        ["xpath=//p[@id='noOfRatings']", "xpath:attributes"],
+        ["xpath=//div[2]/div[2]/div/p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'Based on 0 ratings')]", "xpath:innerText"]
+      ],
+      "value": "Based on 0 ratings"
+    }, {
+      "id": "55d39ee5-4590-4cce-a782-93c6cf3fa48a",
+      "comment": "",
+      "command": "click",
+      "target": "id=rating5star",
+      "targets": [
+        ["id=rating5star", "id"],
+        ["css=#rating5star", "css:finder"],
+        ["xpath=//label[@id='rating5star']", "xpath:attributes"],
+        ["xpath=//label[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a187734-35fd-4641-a826-b24735741bb3",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=avgRating",
+      "targets": [
+        ["id=avgRating", "id"],
+        ["css=#avgRating", "css:finder"],
+        ["xpath=//p[@id='avgRating']", "xpath:attributes"],
+        ["xpath=//div[2]/div[2]/div/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Average rating: 5')]", "xpath:innerText"]
+      ],
+      "value": "Average rating: 5"
+    }, {
+      "id": "e8bb0fc3-6cf3-462a-b256-5360dc8e0564",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=noOfRatings",
+      "targets": [
+        ["id=noOfRatings", "id"],
+        ["css=#noOfRatings", "css:finder"],
+        ["xpath=//p[@id='noOfRatings']", "xpath:attributes"],
+        ["xpath=//div[2]/div[2]/div/p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'Based on 1 ratings')]", "xpath:innerText"]
+      ],
+      "value": "Based on 1 ratings"
+    }, {
+      "id": "c6a07c47-3b03-4091-a16a-b9ba17950f95",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "53b47a33-3e8d-4312-9424-71e1ac7b7bf7",
+    "name": "TP13_PostavljanjeKomentara",
+    "commands": [{
+      "id": "6528cbb6-6364-48e3-a88a-4611e3c4f822",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/index.php/Guest",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a20ddfe7-b1b8-4e41-bc7f-49445f547e0c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "38ee9fa5-fcb7-4d3d-9c97-14fb385545a4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col:nth-child(3)",
+      "targets": [
+        ["css=.col:nth-child(3)", "css:finder"],
+        ["xpath=(//div[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='fixToTop']/div[3]", "xpath:idRelative"],
+        ["xpath=//div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9cf1f49e-f00b-468b-856b-ede32ccefd7e",
+      "comment": "",
+      "command": "click",
+      "target": "id=user",
+      "targets": [
+        ["id=user", "id"],
+        ["name=username", "name"],
+        ["css=#user", "css:finder"],
+        ["xpath=//input[@id='user']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "34a56619-7f25-4cc2-ad0c-18268997c0fc",
+      "comment": "",
+      "command": "type",
+      "target": "id=user",
+      "targets": [
+        ["id=user", "id"],
+        ["name=username", "name"],
+        ["css=#user", "css:finder"],
+        ["xpath=//input[@id='user']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "anastasija123"
+    }, {
+      "id": "ccb14f7a-3675-4abf-a697-c7a46904bda9",
+      "comment": "",
+      "command": "click",
+      "target": "id=pass",
+      "targets": [
+        ["id=pass", "id"],
+        ["name=pass", "name"],
+        ["css=#pass", "css:finder"],
+        ["xpath=//input[@id='pass']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c689ebe0-bd62-4372-9f91-f6acbe00be9b",
+      "comment": "",
+      "command": "type",
+      "target": "id=pass",
+      "targets": [
+        ["id=pass", "id"],
+        ["name=pass", "name"],
+        ["css=#pass", "css:finder"],
+        ["xpath=//input[@id='pass']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "sifra12345"
+    }, {
+      "id": "89389db7-c020-48da-9445-ed4b5dc6b182",
+      "comment": "",
+      "command": "click",
+      "target": "id=Login",
+      "targets": [
+        ["id=Login", "id"],
+        ["css=#Login", "css:finder"],
+        ["xpath=//input[@id='Login']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cc5a1aa5-0f2d-4e54-9d98-8b5f6edb09f2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mySlides:nth-child(1) img",
+      "targets": [
+        ["css=.mySlides:nth-child(1) img", "css:finder"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9111e82c-6f86-4bf2-ab03-883d454b00bf",
+      "comment": "",
+      "command": "click",
+      "target": "id=commentContent",
+      "targets": [
+        ["id=commentContent", "id"],
+        ["css=#commentContent", "css:finder"],
+        ["xpath=//input[@id='commentContent']", "xpath:attributes"],
+        ["xpath=//div[8]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "68c0bffb-475b-4b31-babf-5ed0613e0083",
+      "comment": "",
+      "command": "type",
+      "target": "id=commentContent",
+      "targets": [
+        ["id=commentContent", "id"],
+        ["css=#commentContent", "css:finder"],
+        ["xpath=//input[@id='commentContent']", "xpath:attributes"],
+        ["xpath=//div[8]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "EXCELLENT!"
+    }, {
+      "id": "44e2e166-f0f0-41c6-ad50-ca5e8ff36f29",
+      "comment": "",
+      "command": "click",
+      "target": "id=postComment",
+      "targets": [
+        ["id=postComment", "id"],
+        ["css=#postComment", "css:finder"],
+        ["xpath=//input[@id='postComment']", "xpath:attributes"],
+        ["xpath=//div[8]/div/div/div/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba1cc2ba-5838-495a-9aee-05165772c659",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.card:nth-child(1) b",
+      "targets": [
+        ["css=.card:nth-child(1) b", "css:finder"],
+        ["xpath=//div[@id='comments']/div/div/div/span/small/b", "xpath:idRelative"],
+        ["xpath=//b", "xpath:position"],
+        ["xpath=//b[contains(.,'anastasija123')]", "xpath:innerText"]
+      ],
+      "value": "anastasija123"
+    }, {
+      "id": "dd16b5d5-39a3-42b2-a7f3-4c16f9be9cea",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.card:nth-child(1) .user p",
+      "targets": [
+        ["css=.card:nth-child(1) .user p", "css:finder"],
+        ["xpath=//div[@id='comments']/div/div/div/span/small[2]/p", "xpath:idRelative"],
+        ["xpath=//small[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,' EXCELLENT!')]", "xpath:innerText"]
+      ],
+      "value": " EXCELLENT!"
+    }, {
+      "id": "1d9a319a-8128-4bf9-b008-13ad8022585c",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "558af60e-152b-4fd6-bf1b-573ce1261614",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["localhost:8080"],
+  "plugins": []
+}

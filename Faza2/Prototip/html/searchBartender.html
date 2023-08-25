@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--Dusan Terzic-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/blackout.css">
+    <link rel = "stylesheet" href="../css/style.css">
+    <title>Search</title>
+</head>
+<body class="dark-purple">
+  <nav class="navbar navbar-expand-lg navbar-dark purple">
+    <a class="navbar-brand" href="#"><img class="margin-left" src="../assets/logo.png" width="10%" height="10%"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse purple" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="indexAdmin.html">Home</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="searchAdmin.html">Search</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="notificationsAdmin.html">Notifications</a>
+            </li>
+            <li class="nav-item margin-right">
+                <a class = "nav-link wordwrap"  href="myProfileAdmin.html">My Profile</a>
+            </li>
+            <li class="nav-item margin-right">
+                <a class = "nav-link wordwrap"  href="index.html">Log out</a>
+            </li>
+        </ul>
+    </div>
+</nav>  
+      <div class="container txt-style">
+        <div class = "col-sm-12">
+          <div class = "row">
+              <div class = "col-sm-12">
+                  <h3>Ingredients</h3>
+              </div>
+          </div>
+          <div class = "row">
+              <div class = "col-sm-12">
+                  <div class = "row bar-text">
+                      <div class = "col-sm-6">
+                          <h3>Current ingredients:</h3>
+                          <p>Gin</p>
+                          <p>Tequilla</p>
+                          <p>Lime</p>
+                          <p>Raspberry</p>
+                          <p>Lemon</p>
+                          <p>Mint</p>
+                          <p>Orange</p>
+                          <p>Salt</p>
+                      </div>
+                      <div class = "col-sm-6">
+                          <h3>Add new ingredients</h3>
+                          <div class="dropdown">
+                              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                Add new ingredient
+                              </button>
+                              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Gin</a></li>
+                                <li><a class="dropdown-item" href="#">Vodka</a></li>
+                                <li><a class="dropdown-item" href="#">Tequila</a></li>
+                                <li><a class="dropdown-item" href="addIngredientBartender.html">Add new ingredient</a></li>
+                              </ul>
+                            </div>
+                            <input type="checkbox" value="Use ingredients from your bar" id="use1">
+                            <label for="use1"> Use ingredients from your bar instead</label><br>
+                          </br>
+                          <a href="resultsBartender.html"><button class = "btn btn-dark">Search</button></button></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+</br>
+</br>
+</br>
+    <footer class="purple mt-2">
+        <div class="text-center p-3" style="color:antiquewhite;">
+            © 2021 Copyright Team Blackout
+        </div>
+    </footer>
+</body>
+</html>
